@@ -1,0 +1,4 @@
+1. create your virtualenv
+virtualenv venv
+2. enable the virtualenv
+source venv/bin/activate
