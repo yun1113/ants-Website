@@ -61,20 +61,20 @@ ppm_tmp_file = "/home/root/automation/script/output/*.ppm"
 #	pb = gtk.gdk.Pixbuf(gtk.gdk.COLORSPACE_RGB,False,8,activeWindowGeometry[2],activeWindowGeometry[3])
 #	pb = pb.get_from_drawable(rootWindow,rootWindow.get_colormap(),activeWindowGeometry[0],activeWindowGeometry[1],0,0,activeWindowGeometry[2],activeWindowGeometry[3])
 #	pb.save(png_tmp_dir+filename,"png")
-#
-def screendump (qemutelnet,filename):
-	print 'taking screenshot by qmp'
-	#print 'ask for capability, this is said to be a must'
-	#qemutelnet.write('qmp_capabilities\n')
-	#readresult = qemutelnet.read_until('(qemu)')
-	#print readresult
 
-	print 'screendump command'
-	qemutelnet.write('screendump ' + ppm_tmp_dir + "/" + filename + ".ppm\n")
-	readresult = qemutelnet.read_until('(qemu)')
-	print readresult
+def screendump (qemutelnet,filename):
+    print 'taking screenshot by qmp'
+    #print 'ask for capability, this is said to be a must'
+    # #qemutelnet.write('qmp_capabilities\n')
+    #readresult = qemutelnet.read_until('(qemu)')
+    #print readresult
+
+    print 'screendump command'
+    qemutelnet.write('screendump ' + ppm_tmp_dir + "/" + filename + ".ppm\n")
+    readresult = qemutelnet.read_until('(qemu)')
+    print readresult
 ##----------------------------------------------------------------------------------------------------------------------------	
-	
+
 ##start up, check input parameters and set telnet host&port
 print 'Enter temutelnetclient with three parameters: ' + str(sys.argv)
 resultpath =  sys.argv[1]
@@ -135,15 +135,15 @@ print 'reading action list...'
 actionlist = open('/home/root/automation/script/temuactionlist','r')
 actionarray = actionlist.readlines()
 for action in actionarray:
-	print 'going to process action = ' + action
-	if action[0][0] == 'a':
-		qemutelnet.write(action[1:])
-		#print 'wrote' + action[1:1] + ' to qemu'
-		readresult = qemutelnet.read_until('(qemu)')
-		print readresult
-		time.sleep(5)
-	else:
-		print 'not a valid action, skipping line'
+    print 'going to process action = ' + action
+    if action[0][0] == 'a':
+        qemutelnet.write(action[1:])
+        #print 'wrote' + action[1:1] + ' to qemu'
+        readresult = qemutelnet.read_until('(qemu)')
+        print readresult
+        time.sleep(5)
+    else:
+        print 'not a valid action, skipping line'
 
 ## start recording malware behavior, takes screenshot every 1 minute
 #screenshot("0min.png")
@@ -202,10 +202,12 @@ qemutelnet.write('quit\n')
 # 		  	call(["mv",os.path.join(dirpath,fn),os.path.join(dirpath,sys.argv[2] +"_"+ fn.split("_")[1])])
 
 for filename in os.listdir("/home/root"):
-	if "malware.exe_" in filename:
-		print("mv " + filename)
-		call(["mv",os.path.join("/home/root/" + filename),os.path.join("/home/root/automation/output/" + sys.argv[2] + "_" + filename.split("_")[1])])
-		
+    if "malware.exe_" in filename:
+        print("mv " + filename)
+        if "hooklog" in filename:
+            call(["mv", os.path.join("/home/root/" + filename),
+                  os.path.join("/home/root/automation/output/" + sys.argv[2] + "_" + filename.split("_")[1])])
+
 qemutelnet.close()
 print 'End of program'
 sys.exit()

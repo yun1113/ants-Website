@@ -1,0 +1,186 @@
+html{
+    text-align: center;
+}
+header{
+    margin-top: 200px;
+    color:white;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background: #fae699;
+}
+h2 {
+    font-size: 30pt;
+}
+p {
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 16pt;
+}
+
+input[type="submit"] {
+    border-radius: 0px;
+    /*font-weight: 700;*/
+    padding: 5px 20px;
+    text-align: center;
+    /*font-family: "Roboto", monospace;*/
+    color: #fff;
+    border: solid 2px rgba(255, 255, 255,0.35);
+    background-color: #002060;
+}
+input[type="submit"]:hover{
+    /*font-family: "Roboto", monospace;*/
+    border: solid 2px #fff;
+    background-color: #1C2AA7;
+    color: #fff;
+}
+
+#upload_form input[type="submit"]{
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    /*font-family: "Roboto", sans-serif;*/
+    background-color: transparent;
+    /*border-radius: 6px;*/
+    border: solid 2px #c0c0c0;
+    padding: 0 1em;
+    color: #333;
+    text-decoration: none;
+    line-height: 2.5em;
+    width:300px;
+}
+
+input[type="text"]:focus{
+    animation: focus 0.1s;
+    background-color: rgba(255, 255, 255,1);
+    /*border: 2px solid #c0c0c0;*/
+    /*border-radius: 6px;*/
+    color: #333
+}
+
+input[type="button"] {
+    background-color: #333;
+    /*font-family: "Roboto", monospace;*/
+    border: 2px solid #333;
+    color: white;
+    padding: 5px 11px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#fileTable {
+    font-size: 10px;
+    padding: 5px;
+    background-color: #fff;
+    font-family: "Roboto", monospace;
+    color: #333;
+}
+#tab {
+    width: 500px;
+    padding-left: 150px;
+}
+#tab a{
+    width: 100px;
+    color: white;
+    background-color: #002060;
+}
+
+#tab a:hover{
+    border-color: #002060;
+    background-color: #003BB2;
+}
+
+.nav-tabs{
+    border-bottom: 1px solid #002060;
+}
+
+#upload_form {
+    width: 450px
+}
+
+#search_form {
+    width: 500px
+}
+
+#upload_form label{
+    background: gray;
+    border: none;
+    color: white;
+    padding: 7px 10px;
+    /*text-align: center;*/
+    /*text-decoration: none;*/
+    /*display: inline-block;*/
+    /*font-size: 16px;*/
+}
+#search_form label{
+    width: 80px;
+}
+
+#search_form input[type="text"]{
+    margin: 5px 0px;
+}
+#success,#error {
+    width: 650px;
+    margin-top: 10px;
+}
+
+#searchBtn{
+    margin-top: 35px;
+}
+.errorlist{
+    display: none;
+}
+
+.nav-title{
+    color: #ffc000;
+    float: left;
+    padding: 25px 25px;
+    font-size: 18px;
+    line-height: 22px;
+    height: 70px;
+    font-weight: 700;
+}
+
+.nav-title:hover, .nav-title:focus {
+    text-decoration: none;
+    color: #ffd500;
+}
+
+.navbar-inverse{
+    background-image: url("../image/nav_bg1.jpg");
+    background-size: 100% 120px;
+}
+
+.logo-img {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.tab-content{
+    margin-top: 25px;
+}
+
+.search-column{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.search_title{
+    padding-top: 20px;
+    text-align: left;
+}

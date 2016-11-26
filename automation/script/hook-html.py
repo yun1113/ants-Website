@@ -1,35 +1,41 @@
 import sys
+import os
 
-#input_dir="/mnt/container_storage/webapp/automation/output/"
-#output_dir="/mnt/container_storage/webapp/vmp/malwaredb/templates/"
+input_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../output/')
+output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../../project/vmp/malwaredb/templates/')
 
-input_dir="/home/profile/website/automation/output/"
-output_dir="/home/profile/website/project/vmp/malwaredb/templates/"
+output_text = ["<html>\n", "<head>\n", "<style>\n" ,"   pre{\n", "      font-size: 15px;\n", "    }\n", "</style>\n", "</head>\n", "<body>\n"]
 
-output = '<html>\n'
+# print(output_text)
 
-fin = open(input_dir+sys.argv[1],"rt")
-#output += '<html>\n'
-#with open("D:\f73a5ae9590342c6f77276690508ec510d5ccf4bbd24fb9bab9a03c3d9c2eecb_3132.trace.hooklog","r") as fin:
+# hooklog to html
+def handle_temp(temp_list, output_text):
+    if len(temp_list) == 1:
+        output_text.append("<pre>" + temp_list[0]+ "</pre>\n")
+    elif len(temp_list) == 2:
+        output_text.append("<pre><b>{} {}   {}</b></pre>\n".format("#", temp_list[0][1:-1]
+,temp_list[1]))
+    else:
+        output_text.append("<pre><b>{} {}   {}</b>\n".format("#", temp_list[0][1:-1]
+, temp_list[1]))
+        for arg in temp_list[2:]:
+            output_text.append("    {}\n".format(arg))
+        output_text.append("</pre>\n")
 
-for line in fin:
-    output += line
-    output += '</br>'
-output += '\n</html>'
+# sys.argv[1]: hash_pid.trace.hooklog
+with open(input_dir + sys.argv[1], "rt") as hooklog_file:
+    # read hooklog and split with timestamp
+    temp = []
+    for line in hooklog_file:
+        if "#" in line:
+            # hooklog to html
+            handle_temp(temp, output_text)
+            temp = []
+        temp.append(line[0:-1])
+    handle_temp(temp, output_text)
 
-fout = open(output_dir+sys.argv[1].split('_')[0]+'.html',"wt")
-size = len(output)
-offset = 0
-chunk = 100
-
-#finish = False
-
-while offset <= size:
-    fout.write(output[offset:offset+chunk])
-    offset += chunk
-
-fout.write(output)
-fout.close()
-
-#fout.write(output)
-#fout.close()
+# print(output_text)
+output_text.append("</body>")
+with  open(output_dir + sys.argv[1].split('_')[0] + '.html',"wt") as html_file:
+    for item in output_text:
+        html_file.write("%s" % item)
