@@ -149,11 +149,20 @@ input[type="file"] {
 .nav-title{
     color: #ffc000;
     float: left;
-    padding: 25px 25px;
-    font-size: 18px;
-    line-height: 22px;
-    height: 70px;
-    font-weight: 700;
+    padding: 15px 25px;
+    font-size: 25px;
+    line-height: 27px;
+    height: 90px;
+    /*font-family: 'Pacifico', cursive;*/
+    font-family: 'Dancing Script', cursive;
+    /*font-family: 'Yellowtail', cursive;*/
+    /*font-family: 'Playfair Display', serif;*/
+    /*font-family: 'Alegreya', serif;*/
+    /*font-family: 'Lobster', cursive;*/
+    /*font-family: 'Mr Bedfort', cursive;*/
+    /*font-family: 'Lato', sans-serif;*/
+    /*font-family: 'PT Serif', serif;*/
+
 }
 
 .nav-title:hover, .nav-title:focus {
@@ -163,11 +172,10 @@ input[type="file"] {
 
 .navbar-inverse{
     background-image: url("../image/nav_bg1.jpg");
-    background-size: 100% 120px;
+    background-size: 100% ;
 }
 
 .logo-img {
-    padding-top: 100px;
     padding-bottom: 20px;
 }
 
@@ -183,4 +191,8 @@ input[type="file"] {
 .search_title{
     padding-top: 20px;
     text-align: left;
+}
+
+.content{
+    padding-top: 140px;
 }
