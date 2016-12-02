@@ -152,7 +152,7 @@ input[type="file"] {
     padding: 15px 25px;
     font-size: 25px;
     line-height: 27px;
-    height: 90px;
+    height: 80px;
     /*font-family: 'Pacifico', cursive;*/
     font-family: 'Dancing Script', cursive;
     /*font-family: 'Yellowtail', cursive;*/
@@ -194,5 +194,14 @@ input[type="file"] {
 }
 
 .content{
-    padding-top: 140px;
+    padding-top: 20px;
+}
+
+.nav2{
+    margin-top:80px;
+    background-color: #374d74;
+}
+
+.navbar-inverse2{
+
 }
