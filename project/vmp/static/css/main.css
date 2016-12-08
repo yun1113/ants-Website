@@ -25,6 +25,11 @@ p {
     font-size: 16pt;
 }
 
+#logo_img{
+    max-height: 110px;
+    padding: 10px 0px;
+}
+
 #upload_form input[type="submit"], #search_form input[type="submit"]{
     border-radius: 0px;
     /*font-weight: 700;*/
@@ -55,7 +60,7 @@ input[type="text"] {
     color: #333;
     text-decoration: none;
     line-height: 2.5em;
-    width:300px;
+    /*width:300px;*/
 }
 
 input[type="text"]:focus{
@@ -127,18 +132,31 @@ input[type="file"] {
     width: 500px
 }
 
-#upload_form label{
+#hintText{
+    text-align: left;
+    font-size: 20px;
+    padding-left: 0px;
+    padding-bottom: 5px;
+}
+#chooseFileLabel{
     background: gray;
     border: none;
     color: white;
-    padding: 7px 10px;
+    padding: 9px 10px;
     /*text-align: center;*/
     /*text-decoration: none;*/
     /*display: inline-block;*/
     /*font-size: 16px;*/
 }
 #search_form label{
-    width: 80px;
+    /*width: 80px;*/
+    text-align: right;
+    padding: 15px 15px;
+}
+
+#hashType{
+    padding: 9px 3px;
+    margin: 5px 0px;
 }
 
 #search_form input[type="text"]{
@@ -150,16 +168,18 @@ input[type="file"] {
 }
 
 #searchBtn{
-    margin-top: 35px;
+    margin-top: 25px;
 }
 .errorlist{
     display: none;
 }
+.navbar-nav nav{
 
+}
 .nav-title{
     color: orange;
     float: left;
-    padding: 25px 25px;
+    padding: 25px 0px;
     font-size: 32px;
     line-height: 30px;
     height: 80px;
@@ -203,7 +223,7 @@ input[type="file"] {
 /*}*/
 
 .nav2{
-    margin-top:80px;
+    margin-top:110px;
     background-color: #374d74;
     /*position: fixed;*/
     /*left: 0;*/
@@ -219,7 +239,12 @@ input[type="file"] {
     color: white;
 }
 
-.navbar-nav li a { display: block; }
+.navbar-nav li a {
+    display: block;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
 .navbar-nav a:hover, .navbar-nav a:focus{
     color: #374d74;
     background-color: rgb(237,244,249) !important;;
