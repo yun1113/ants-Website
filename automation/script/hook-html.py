@@ -25,7 +25,7 @@ def handle_temp(temp_list, output_text):
 with open(input_dir + sys.argv[1], "rt") as hooklog_file:
     # read hooklog and split with timestamp
     temp = []
-    temp.append(sys.argv[1] + "Bahavior Analysis")
+    temp.append(sys.argv[1] + " Bahavior Analysis")
     hooklog_file.readline()  # first line
     for line in hooklog_file:
         if "#" in line:

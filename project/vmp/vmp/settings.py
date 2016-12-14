@@ -25,7 +25,7 @@ SECRET_KEY = 'ej88b%$kw%zk5m#qt3#c*om#g%ti64+)f5gen!swto*#h8l!+v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '140.112.107.39']
 
 # Celery
 BROKER_URL = 'django://'
