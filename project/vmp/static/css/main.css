@@ -128,13 +128,13 @@ input[type="file"] {
     color: #50503F;
 }
 
-#upload_form {
-    width: 450px
-}
+/*#upload_form {*/
+    /*width: 450px*/
+/*}*/
 
-#search_form {
-    width: 500px
-}
+/*#search_form {*/
+    /*width: 500px*/
+/*}*/
 
 #hintText{
     text-align: left;
