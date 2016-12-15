@@ -336,26 +336,29 @@ iframe {
 }
 
 /*footer*/
-footer{
+.footer{
     bottom: 0px;
+    right: 0px;
+    left: 0px;
     position: absolute;
     text-align:center;
     background-color: #374d74;
     width:100%;
     height: 50px;
+    margin-top: 50px;
 }
 
-.content{
-    padding-bottom: 50px;
-}
-footer p{
+/*.content{*/
+    /*padding-bottom: 50px;*/
+/*}*/
+.footer p{
     color: white;
     font-size: 14px;
     line-height: 40px;
     margin: 0px;
 }
 
-footer .container, footer .row {
+.footer .container, .footer .row {
     height: 50px;
 }
 
