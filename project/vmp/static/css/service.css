@@ -1,7 +1,6 @@
 .container-space {
-  /*margin-top: 50px;*/
-  /*margin-bottom: 50px;*/
-  padding-left: 90px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .affix {
@@ -34,10 +33,10 @@
 }
 
 #navimg {
-  background-image: url("../image/nav_bg1.jpg");
-  height: 100px;
+  background-image: url(../image/nav_bg1.jpg);
   background-size: 100% ;
-  padding-top: 16px;
+  height: 100px;
+  padding-top: 12px;
 }
 
 #nav-title {
@@ -57,12 +56,6 @@ footer {
   bottom: 0;
 }
 
-#fileselector {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  margin-left: 0px;
-}
 
 #upload-file-selector {
   display:none;   
@@ -77,13 +70,12 @@ h1 {
 }
 
 form {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 form div {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
-
 
 p {
   text-indent: 50px;
@@ -98,6 +90,7 @@ footer p {
   font-size: 14px;
 }
 
+
 p:only-child {
   text-indent: 0px;
   text-align: center;
@@ -111,6 +104,5 @@ img {
 }
 
 body {
-  /*background: #f2f2f2;*/
   background: #fae699;
 }
