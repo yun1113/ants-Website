@@ -1,6 +1,10 @@
-.container-space {
-  margin-top: 50px;
-  margin-bottom: 50px;
+/*.container-space {*/
+  /*margin-top: 50px;*/
+  /*margin-bottom: 70px;*/
+/*}*/
+
+#service2{
+  margin-bottom: 70px;
 }
 
 .affix {
@@ -36,7 +40,7 @@
   background-image: url(../image/nav_bg1.jpg);
   background-size: 100% ;
   height: 100px;
-  padding-top: 12px;
+  padding-top: 16px;
 }
 
 #nav-title {
@@ -52,10 +56,17 @@ footer {
   background-color: #374d74;
   width: 100%;
   height: 40px;
-  /*position: fixed;*/
+  position: fixed;
   bottom: 0;
+  z-index: 9999;
 }
 
+footer p {
+  padding-top: 10px;
+  text-indent: 50px;
+  text-align: justify;
+  font-size: 14px;
+}
 
 #upload-file-selector {
   display:none;   
@@ -77,26 +88,23 @@ form div {
   margin-bottom: 10px;
 }
 
+.form-center{
+  text-align: center;
+}
+
 p {
   text-indent: 50px;
   text-align: justify;
   font-size: 20px;
 }
 
-footer p {
-  padding-top: 10px;
-  text-indent: 50px;
-  text-align: justify;
-  font-size: 14px;
-}
-
-
 p:only-child {
   text-indent: 0px;
   text-align: center;
+  font-size: 14px;
 }
 
-img {
+#navimg img {
   height: 80px;
   width: 80px;
   float: left;
@@ -105,4 +113,61 @@ img {
 
 body {
   background: #fae699;
+}
+
+/*search detail*/
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background-color: #F2EEDF;
+}
+
+.nav-tabs>li>a{
+    background-color: #DCD3B1;
+    color: black;
+}
+
+#hashFrame{
+    background-color: #F2EEDF;
+}
+
+.list-group-item{
+    background-color: #F2EEDF;
+}
+
+iframe {
+    height:400px;
+    overflow-y: scroll;
+    width: 100%;
+    border:none
+}
+
+#save_img, #print_img{
+    max-height: 20px;
+}
+
+.share{
+    text-align: left;
+    padding: 10px 10px;
+    background-color:  #F2EEDF;
+}
+
+.jumbotron p {
+  text-indent: 10px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.hooklog-page{
+    padding: 10px 0px 0px 10px;
+}
+
+/*family*/
+
+.tab-content{
+    margin-bottom: 70px;
+}
+
+.tab-pane img{
+    max-width: 100%;
+    /*margin-bottom: 70px;*/
 }

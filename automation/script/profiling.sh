@@ -1,3 +1,3 @@
 #!/bin/bash
-python winmalware.py /home/root/malware/$1 /home/root/automation/output/
-python moving.py
+python /home/root/automation/script/winmalware.py /home/root/malware/$1 /home/root/automation/output/
+python /home/root/automation/script/moving.py $1

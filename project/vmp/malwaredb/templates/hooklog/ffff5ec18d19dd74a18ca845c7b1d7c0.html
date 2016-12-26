@@ -1,0 +1,51 @@
+<html>
+<head>
+<style>
+   pre{
+      font-size: 15px;
+    }
+</style>
+</head>
+<body>
+<pre>ffff5ec18d19dd74a18ca845c7b1d7c0_3164.trace.hooklog Bahavior Analysis</pre>
+<pre><b># 19880000   LoadLibrary</b>
+    lpFileName=C:\WINDOWS\system32\IMM32.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 19965000   LoadLibrary</b>
+    lpFileName=gdi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 19929000   LoadLibrary</b>
+    lpFileName=LPK.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 20012000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+    Return=0
+</pre>
+<pre><b># 20013000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+    Return=2
+</pre>
+<pre><b># 20035000   CreateFile</b>
+    hName=C:\WINDOWS\WindowsShell.Manifest
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 20060000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+    Return=2
+</pre>
+<pre><b># 20061000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+    Return=2
+</pre>
+<pre><b># 20062000   RegEnumValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+    type=REG_DWORD
+    data=2
+    Return=0
+</pre>
+</body>
