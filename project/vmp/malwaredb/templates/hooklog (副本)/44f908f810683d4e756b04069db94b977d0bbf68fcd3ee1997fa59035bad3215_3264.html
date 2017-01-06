@@ -1,0 +1,247 @@
+<html>
+<head>
+<style>
+   pre{
+      font-size: 15px;
+    }
+</style>
+</head>
+<body>
+<pre>44f908f810683d4e756b04069db94b977d0bbf68fcd3ee1997fa59035bad3215_3264.trace.hooklog Bahavior Analysis</pre>
+<pre><b># 20517000   LoadLibrary</b>
+    lpFileName=C:\WINDOWS\system32\IMM32.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 20611000   LoadLibrary</b>
+    lpFileName=gdi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 20577000   LoadLibrary</b>
+    lpFileName=LPK.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 20628000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 20641000   CreateFile</b>
+    hName=C:\DOCUME~1\ants\LOCALS~1\Temp\Tsu28823D65.dll
+    desiredAccess=GENERIC_WRITE 
+    creationDisposition=CREATE_ALWAYS
+    Return=SUCCESS
+</pre>
+<pre><b># 29427000   CreateFile</b>
+    hName=C:\WINDOWS\WindowsShell.Manifest
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 29453000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+    Return=2
+</pre>
+<pre><b># 29454000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+    Return=2
+</pre>
+<pre><b># 29455000   RegEnumValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+    type=REG_DWORD
+    data=2
+    Return=0
+</pre>
+<pre><b># 29481000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SYSTEM\Setup\SystemSetupInProgress
+    Return=0
+    type=REG_DWORD
+    data=0
+</pre>
+<pre><b># 29509000   LoadLibrary</b>
+    lpFileName=comctl32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 29536000   LoadLibrary</b>
+    lpFileName=comctl32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 29574000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+    Return=0
+</pre>
+<pre><b># 29575000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+    Return=2
+</pre>
+<pre><b># 29236000   LoadLibrary</b>
+    lpFileName=C:\DOCUME~1\ants\LOCALS~1\Temp\Tsu28823D65.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 29597000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 29601000   CreateFile</b>
+    hName=C:\DOCUME~1\ants\LOCALS~1\Temp\malware.log
+    desiredAccess=GENERIC_WRITE 
+    creationDisposition=OPEN_ALWAYS
+    Return=SUCCESS
+</pre>
+<pre><b># 29651000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\CSDVersion
+    Return=0
+    type=REG_SZ
+    data=Service Pack 3
+</pre>
+<pre><b># 29667000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\MaxRpcSize
+    Return=2
+</pre>
+<pre><b># 29673000   LoadLibrary</b>
+    lpFileName=rpcrt4.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 29720000   LoadLibrary</b>
+    lpFileName=shell32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 29809000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ThemeManager\Compositing
+    Return=2
+</pre>
+<pre><b># 29811000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Control Panel\Desktop\LameButtonText
+    Return=2
+</pre>
+<pre><b># 29813000   LoadLibrary</b>
+    lpFileName=uxtheme.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 29960000   LoadLibrary</b>
+    lpFileName=ole32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 30185000   CreateFile</b>
+    hName=C:\WINDOWS\system32\wininet.dll
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 30191000   CreateFile</b>
+    hName=C:\WINDOWS\system32\wininet.dll
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 30221000   CreateFile</b>
+    hName=C:\WINDOWS\system32\msi.dll
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 30232000   CreateFile</b>
+    hName=C:\WINDOWS\system32\msi.dll
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 30239000   LoadLibrary</b>
+    lpFileName=sxs.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 30366000   LoadLibrary</b>
+    lpFileName=mscoree.dll
+    Return=FAILURE
+</pre>
+<pre><b># 30379000   LoadLibrary</b>
+    lpFileName=rstrtmgr.dll
+    Return=FAILURE
+</pre>
+<pre><b># 30403000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 30410000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 30412000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 30420000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\IMM\Ime File
+    Return=0
+</pre>
+<pre><b># 30427000   CreateFile</b>
+    hName=C:\WINDOWS\system32\msctfime.ime
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 30435000   CreateFile</b>
+    hName=C:\WINDOWS\system32\msctfime.ime
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 30497000   LoadLibrary</b>
+    lpFileName=C:\WINDOWS\system32\ole32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 30448000   LoadLibrary</b>
+    lpFileName=C:\WINDOWS\system32\msctfime.ime
+    Return=SUCCESS
+</pre>
+<pre><b># 30530000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF\Disable Thread Input Manager
+    Return=2
+</pre>
+<pre><b># 30531000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\CTF\SystemShared\CUAS
+    Return=0
+    type=REG_DWORD
+    data=0
+</pre>
+<pre><b># 30538000   LoadLibrary</b>
+    lpFileName=C:\WINDOWS\system32\msctfime.ime
+    Return=SUCCESS
+</pre>
+<pre><b># 30579000   LoadLibrary</b>
+    lpFileName=UxTheme.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 30789000   RegEnumValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink\Lucida San
+    Return=0
+</pre>
+<pre><b># 30790000   RegEnumValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink\Tah
+    Return=0
+</pre>
+<pre><b># 30790000   RegEnumValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink\Microsoft 
+    Return=0
+</pre>
+<pre><b># 31655000   CreateFile</b>
+    hName=C:\DOCUME~1\ants\LOCALS~1\Temp\62DA92EF.dat
+    desiredAccess=GENERIC_WRITE 
+    creationDisposition=CREATE_ALWAYS
+    Return=SUCCESS
+</pre>
+<pre><b># 39992000   CreateFile</b>
+    hName=C:\DOCUME~1\ants\LOCALS~1\Temp\62DA92EF.dat
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+</body>

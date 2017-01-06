@@ -1,0 +1,216 @@
+<html>
+<head>
+<style>
+   pre{
+      font-size: 15px;
+    }
+</style>
+</head>
+<body>
+<pre>fff6e10b530975c473ec236a13cc71d0_3144.trace.hooklog Bahavior Analysis</pre>
+<pre><b># 20653000   LoadLibrary</b>
+    lpFileName=C:\WINDOWS\system32\IMM32.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 20727000   LoadLibrary</b>
+    lpFileName=gdi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 20698000   LoadLibrary</b>
+    lpFileName=LPK.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 20800000   LoadLibrary</b>
+    lpFileName=KERNEL32.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 20812000   LoadLibrary</b>
+    lpFileName=ADVAPI32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 20818000   LoadLibrary</b>
+    lpFileName=MSVCRT.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 20823000   LoadLibrary</b>
+    lpFileName=USER32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 20827000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\MaxRpcSize
+    Return=2
+</pre>
+<pre><b># 20832000   LoadLibrary</b>
+    lpFileName=rpcrt4.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 20841000   CreateFile</b>
+    hName=\\.\PIPE\lsarpc
+    desiredAccess=GENERIC_READ GENERIC_WRITE 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 20851000   OpenProcess</b>
+    desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+    dwProcessId=424
+    Return=SUCCESS
+    procName=winlogon.exe
+</pre>
+<pre><b># 20955000   LoadLibrary</b>
+    lpFileName=advapi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 21031000   LoadLibrary</b>
+    lpFileName=kernel32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 21069000   LoadLibrary</b>
+    lpFileName=advapi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 21243000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+    Return=0
+</pre>
+<pre><b># 21244000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+    Return=2
+</pre>
+<pre><b># 20851000   LoadLibrary</b>
+    lpFileName=sfc_os.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 21318000   CreateRemoteThread</b>
+    procName=winlogon.exe
+    Return=SUCCESS
+    pId=424
+</pre>
+<pre><b># 21363000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 21363000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 21370000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 21369000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 21374000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 21374000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 21394000   RegCreateKey</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{gvet11vr-cagg-fxle-ahdx-asqpqxvtxxg2}
+    Return=0
+</pre>
+<pre><b># 21396000   RegSetValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{gvet11vr-cagg-fxle-ahdx-asqpqxvtxxg2}
+    type=REG_SZ
+    data=œµÕ≥…Ë÷√
+    Return=0
+</pre>
+<pre><b># 21398000   RegSetValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{gvet11vr-cagg-fxle-ahdx-asqpqxvtxxg2}\stubpath
+    type=REG_EXPAND_SZ
+    data=C:\Windows\System32\inbfyviuk.exe
+    ãZã
+    Return=0
+</pre>
+<pre><b># 21400000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 21400000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 21808000   CreateFile</b>
+    hName=C:\Windows\System32\inbfyviuk.exe
+    desiredAccess=GENERIC_WRITE 
+    creationDisposition=CREATE_ALWAYS
+    Return=SUCCESS
+</pre>
+<pre><b># 21808000   CreateFile</b>
+    hName=C:\Windows\System32\inbfyviuk.exe
+    desiredAccess=GENERIC_WRITE 
+    creationDisposition=CREATE_ALWAYS
+    Return=SUCCESS
+</pre>
+<pre><b># 21814000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 21814000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 21819000   CreateFile</b>
+    hName=C:\Windows\System32\inbfyviuk.exe_lang.ini
+    desiredAccess=GENERIC_WRITE 
+    creationDisposition=CREATE_ALWAYS
+    Return=SUCCESS
+</pre>
+<pre><b># 21819000   CreateFile</b>
+    hName=C:\Windows\System32\inbfyviuk.exe_lang.ini
+    desiredAccess=GENERIC_WRITE 
+    creationDisposition=CREATE_ALWAYS
+    Return=SUCCESS
+</pre>
+<pre><b># 22011000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+    Return=0
+</pre>
+<pre><b># 22015000   LoadLibrary</b>
+    lpFileName=advapi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 21830000   CreateProcessInternal</b>
+    lpCommandLine=C:\Windows\System32\inbfyviuk.exe
+    Return=SUCCESS
+    dwProcessId=3168
+    dwThreadId=3172
+</pre>
+<pre><b># 21830000   CreateProcessInternal</b>
+    lpCommandLine=C:\Windows\System32\inbfyviuk.exe
+    Return=SUCCESS
+    dwProcessId=3168
+    dwThreadId=3172
+</pre>
+<pre><b># 21830000   CreateProcess</b>
+    lpCommandLine=C:\Windows\System32\inbfyviuk.exe
+    Return=SUCCESS
+    dwProcessId=3168
+    dwThreadId=3172
+</pre>
+<pre><b># 22028000   ExitProcess</b></pre>
+</body>

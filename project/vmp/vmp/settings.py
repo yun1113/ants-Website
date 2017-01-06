@@ -25,11 +25,15 @@ SECRET_KEY = 'ej88b%$kw%zk5m#qt3#c*om#g%ti64+)f5gen!swto*#h8l!+v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '140.112.107.39']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '140.112.107.39', '0.0.0.0']
 
 # Celery
-BROKER_URL = 'django://'
-CELERY_RESULT_BACKEND = 'djcelery.backends.database:DatabaseBackend'
+import djcelery
+djcelery.setup_loader()
+
+BROKER_URL = 'amqp://guest:guest@localhost:5672/'
+# BROKER_URL = 'django://'
+# CELERY_RESULT_BACKEND = 'djcelery.backends.database:DatabaseBackend'
 
 # Application definition
 

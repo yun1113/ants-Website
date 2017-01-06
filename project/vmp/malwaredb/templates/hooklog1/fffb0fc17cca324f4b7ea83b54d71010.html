@@ -1,0 +1,63 @@
+<html>
+<head>
+<style>
+   pre{
+      font-size: 15px;
+    }
+</style>
+</head>
+<body>
+<pre>fffb0fc17cca324f4b7ea83b54d71010_3188.trace.hooklog Bahavior Analysis</pre>
+<pre><b># 19827000   LoadLibrary</b>
+    lpFileName=C:\WINDOWS\system32\IMM32.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 19903000   LoadLibrary</b>
+    lpFileName=gdi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 19873000   LoadLibrary</b>
+    lpFileName=LPK.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 19947000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+    Return=0
+</pre>
+<pre><b># 19948000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+    Return=2
+</pre>
+<pre><b># 20000000   LoadLibrary</b>
+    lpFileName=Kernel32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 20007000   LoadLibrary</b>
+    lpFileName=Kernel32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 22519000   CreateFile</b>
+    hName=C:\DOCUME~1\ants\LOCALS~1\Temp\1.tmp
+    desiredAccess=GENERIC_READ 
+    creationDisposition=CREATE_NEW
+    Return=SUCCESS
+</pre>
+<pre><b># 22530000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 22540000   CreateFile</b>
+    hName=C:\DOCUME~1\ants\LOCALS~1\Temp\1.tmp
+    desiredAccess=GENERIC_WRITE 
+    creationDisposition=CREATE_ALWAYS
+    Return=SUCCESS
+</pre>
+<pre><b># 22548000   CreateFile</b>
+    hName=C:\DOCUME~1\ants\LOCALS~1\Temp\1.tmp
+    desiredAccess=GENERIC_WRITE 
+    creationDisposition=OPEN_ALWAYS
+    Return=SUCCESS
+</pre>
+</body>

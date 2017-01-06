@@ -37,6 +37,6 @@ with open(input_dir + sys.argv[1], "rt") as hooklog_file:
 
 # print(output_text)
 output_text.append("</body>")
-with  open(output_dir + sys.argv[1].split('_')[0] + '.html',"wt") as html_file:
+with  open(output_dir + sys.argv[1].split('.')[0] + '.html',"wt") as html_file:
     for item in output_text:
         html_file.write("%s" % item)

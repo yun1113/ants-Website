@@ -1,0 +1,66 @@
+<html>
+<head>
+<style>
+   pre{
+      font-size: 15px;
+    }
+</style>
+</head>
+<body>
+<pre>82c277123443a23957a2787131235de64eeb29202e18b07af19ef374e5d7e050_tmp Bahavior Analysis</pre>
+<pre><b># 35525000   LoadLibrary</b>
+    lpFileName=C:\WINDOWS\system32\IMM32.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 35604000   LoadLibrary</b>
+    lpFileName=gdi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 35572000   LoadLibrary</b>
+    lpFileName=LPK.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 35713000   LoadLibrary</b>
+    lpFileName=VERSION.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 35727000   CreateFile</b>
+    hName=C:\WINDOWS\System32\Wbem\wmic.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 35736000   CreateFile</b>
+    hName=C:\WINDOWS\System32\Wbem\wmic.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 35879000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+    Return=0
+</pre>
+<pre><b># 35883000   LoadLibrary</b>
+    lpFileName=advapi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 35614000   CreateProcessInternal</b>
+    lpCommandLine=WMIC bios Get Version /FORMAT:textvaluelist.xsl
+    Return=SUCCESS
+    dwProcessId=3244
+    dwThreadId=3248
+</pre>
+<pre><b># 35614000   CreateProcessInternal</b>
+    lpCommandLine=WMIC bios Get Version /FORMAT:textvaluelist.xsl
+    Return=SUCCESS
+    dwProcessId=3244
+    dwThreadId=3248
+</pre>
+<pre><b># 35614000   CreateProcess</b>
+    lpCommandLine=WMIC bios Get Version /FORMAT:textvaluelist.xsl
+    Return=SUCCESS
+    dwProcessId=3244
+    dwThreadId=3248
+</pre>
+<pre><b># 39869000   ExitProcess</b></pre>
+</body>

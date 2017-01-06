@@ -1,0 +1,45 @@
+<html>
+<head>
+<style>
+   pre{
+      font-size: 15px;
+    }
+</style>
+</head>
+<body>
+<pre>fff4a5a5dfd373648321b8c917d5251c_3248.trace.hooklog Bahavior Analysis</pre>
+<pre><b># 20809000   LoadLibrary</b>
+    lpFileName=Kernel32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 20813000   LoadLibrary</b>
+    lpFileName=ntdll.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 23593000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+    Return=0
+</pre>
+<pre><b># 23597000   LoadLibrary</b>
+    lpFileName=advapi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 23515000   CreateProcessInternal</b>
+    lpApplicationName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    Return=SUCCESS
+    dwProcessId=3264
+    dwThreadId=3268
+</pre>
+<pre><b># 23515000   CreateProcessInternal</b>
+    lpApplicationName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    Return=SUCCESS
+    dwProcessId=3264
+    dwThreadId=3268
+</pre>
+<pre><b># 23515000   CreateProcess</b>
+    lpApplicationName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    Return=SUCCESS
+    dwProcessId=3264
+    dwThreadId=3268
+</pre>
+</body>

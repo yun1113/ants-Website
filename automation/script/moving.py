@@ -1,8 +1,4 @@
-#!/usr/bin/pythons
-import time
-import telnetlib
 from subprocess import call
-from subprocess import Popen
 import sys
 import os
 
