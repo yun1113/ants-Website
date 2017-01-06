@@ -25,11 +25,15 @@ SECRET_KEY = 'ej88b%$kw%zk5m#qt3#c*om#g%ti64+)f5gen!swto*#h8l!+v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '140.112.107.39', '0.0.0.0']
 
 # Celery
-BROKER_URL = 'django://'
-CELERY_RESULT_BACKEND = 'djcelery.backends.database:DatabaseBackend'
+import djcelery
+djcelery.setup_loader()
+
+BROKER_URL = 'amqp://guest:guest@localhost:5672/'
+# BROKER_URL = 'django://'
+# CELERY_RESULT_BACKEND = 'djcelery.backends.database:DatabaseBackend'
 
 # Application definition
 
@@ -84,10 +88,21 @@ WSGI_APPLICATION = 'vmp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'vmp',
+        'USER': 'ants',
+        'PASSWORD': 'project319',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 # Cache CY_added
 CACHE_BACKEND = 'memcached://127.0.0.1:11211/'

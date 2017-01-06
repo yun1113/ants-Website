@@ -83,7 +83,7 @@ PORT = 4444
 
 ##wait for temu to enter a stable phase
 print 'starting WinXP in 200 seconds.....'  
-time.sleep(200)
+time.sleep(300)
 print 'starting WinXP is done.'
 
 print 'starting tshark on the outside world'

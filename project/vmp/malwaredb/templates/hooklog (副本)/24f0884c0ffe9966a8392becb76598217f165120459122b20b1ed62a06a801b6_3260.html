@@ -1,0 +1,105 @@
+<html>
+<head>
+<style>
+   pre{
+      font-size: 15px;
+    }
+</style>
+</head>
+<body>
+<pre>24f0884c0ffe9966a8392becb76598217f165120459122b20b1ed62a06a801b6_3260.trace.hooklog Bahavior Analysis</pre>
+<pre><b># 23438000   LoadLibrary</b>
+    lpFileName=C:\WINDOWS\system32\IMM32.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 23519000   LoadLibrary</b>
+    lpFileName=gdi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 23488000   LoadLibrary</b>
+    lpFileName=LPK.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 23570000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+    Return=0
+</pre>
+<pre><b># 23571000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+    Return=2
+</pre>
+<pre><b># 23593000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SYSTEM\Setup\SystemSetupInProgress
+    Return=0
+    type=REG_DWORD
+    data=0
+</pre>
+<pre><b># 23718000   CreateFile</b>
+    hName=C:\WINDOWS\WindowsShell.Manifest
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 23746000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+    Return=2
+</pre>
+<pre><b># 23748000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+    Return=2
+</pre>
+<pre><b># 23748000   RegEnumValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+    type=REG_DWORD
+    data=2
+    Return=0
+</pre>
+<pre><b># 23627000   LoadLibrary</b>
+    lpFileName=comctl32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 23831000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+    Return=2
+</pre>
+<pre><b># 23832000   LoadLibrary</b>
+    lpFileName=imm32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 23769000   LoadLibrary</b>
+    lpFileName=comctl32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 23898000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 23898000   CopyFile</b>
+    lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    lpNewFileName=C:\WINDOWS\president.exe
+    Return=SUCCESS
+</pre>
+<pre><b># 23905000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\MaxRpcSize
+    Return=2
+</pre>
+<pre><b># 23911000   LoadLibrary</b>
+    lpFileName=rpcrt4.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 24367000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\ServiceCurrent
+    Return=0
+    type=REG_DWORD
+    data=9
+</pre>
+<pre><b># 25839000   CreateFile</b>
+    hName=\\.\pipe\net\NtControlPipe9
+    desiredAccess=GENERIC_READ GENERIC_WRITE 
+    creationDisposition=OPEN_EXISTING
+    Return=FAILURE
+</pre>
+<pre><b># 25849000   ExitProcess</b></pre>
+</body>

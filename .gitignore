@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
 
 # Installer logs
 pip-log.txt
@@ -24,6 +25,8 @@ build
 /VMimage
 project/vmp/media/
 automation/output
+project/vmp/malwaredb/virus_total/
+project/vmp/malwaredb/templates/hooklog/
 
 # Logs:
 *.log

@@ -1,0 +1,322 @@
+/*.container-space {*/
+  /*margin-top: 50px;*/
+  /*margin-bottom: 70px;*/
+/*}*/
+
+#service2{
+  margin-bottom: 70px;
+}
+
+.affix {
+  top: 0;
+  width: 100%;
+}
+
+.affix + .container-fluid {
+  padding-top: 70px;
+}
+
+.nav.navbar-nav li a {
+  color: white;
+  font-size: 16px;
+}
+
+.nav.navbar-nav li a:hover {
+  color: #b3b3b3;
+}
+
+.nav.navbar-nav li ul li a {
+  color: black;
+}
+
+.nav.navbar-nav li ul li a:hover {
+  color: #808080;
+}
+
+.navbar.navbar-default {
+  background-color: #374d74;
+}
+
+#navimg {
+  background-image: url(../image/nav_bg1.JPG);
+  background-size: 100% ;
+  height: 100px;
+  padding-top: 16px;
+  padding-left: 20px;
+}
+
+#nav-title {
+  color: #ffc000;
+  font-size: 28px;
+  /*font-family: 'Dancing Script', cursive;*/
+  font-family: 'Slabo 27px', serif;
+  text-decoration: none
+}
+
+footer {
+  color: white;
+  background-color: #374d74;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+}
+
+footer p {
+  padding-top: 10px;
+  text-indent: 50px;
+  text-align: justify;
+  font-size: 14px;
+}
+
+#upload-file-selector {
+  display:none;
+}
+
+.margin-correction {
+  margin-right: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+.form-center{
+  text-align: center;
+}
+
+label{
+    font-size:16px;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+p:only-child {
+  text-indent: 0px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#navimg img {
+  height: 80px;
+  width: 80px;
+  float: left;
+  margin-right: 25px;
+}
+
+body {
+  background: #fae699;
+}
+
+/*search detail*/
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background-color: #F2EEDF;
+}
+
+.nav-tabs>li>a{
+    background-color: #DCD3B1;
+    color: black;
+}
+
+#hashFrame{
+    background-color: #F2EEDF;
+}
+
+.list-group-item{
+    background-color: #F2EEDF;
+    font-size:16px;
+}
+
+iframe {
+    height:400px;
+    overflow-y: scroll;
+    width: 100%;
+    border:none
+}
+
+#save_img, #print_img{
+    max-height: 20px;
+}
+
+.share{
+    text-align: left;
+    padding: 10px 10px;
+    background-color:  #F2EEDF;
+}
+
+.jumbotron p {
+  text-indent: 10px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.hooklog-page{
+    padding: 10px 0px 0px 10px;
+}
+
+.nav-tabs b{
+    font-size:16px;
+}
+/*family*/
+
+.tab-content{
+    margin-bottom: 70px;
+}
+
+.tab-pane img{
+    max-width: 100%;
+    /*margin-bottom: 70px;*/
+}
+
+.panel-body h2{
+    font-size: 32px;
+    text-indent: 20px;
+    padding-bottom: 20px;
+}
+
+.illustration{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.illustration p{
+    text-indent: 0;
+    font-size: 22px;
+    text-align: left;
+}
+
+.illustration img{
+    padding-left: 30px;
+}
+
+.plot {
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.plot p{
+    text-indent: 0px;
+    padding-bottom: 10px;
+}
+
+.vertical-nav li{
+    border: solid 1px #6B4645;
+}
+
+.vertical-nav li{
+    padding: 10px;
+}
+
+.vertical-nav li a{
+    color: #6B4645;
+    text-align: center;
+    padding: 0px;
+    font-weight: 700;
+}
+
+.panel-section {
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: solid 1px #6B4645;
+}
+
+.panel-section p{
+    text-indent: 0px;
+    padding: 10px 0;
+}
+
+.selected{
+    /*text-decoration: underline;*/
+    border-bottom: 2px solid #6B4645;
+    padding-bottom: 10px;
+}
+
+#section2 table .actionAPI{
+    width:15%;
+}
+
+#section2 td {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 10px;
+}
+
+#section2 tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+#section2 tr:nth-child(odd) {
+    background-color: white;
+}
+
+#APItable{
+    display: block;
+    overflow-x: auto;
+    line-height: 30px;
+    border-radius: .25rem;
+}
+
+#APItable th{
+    background: #d6d6d6;
+    text-align: center;
+    padding: 0 15px 0 20px;
+    width: 10%;
+}
+
+#APItable td {
+    background-color: white;
+    vertical-align:text-top;
+    border: 1px solid #ddd;
+    padding: 10px 10px;
+}
+
+#family-table{
+    table-layout: fixed;
+    width: 90%;
+    /*display: block;*/
+    /*margin: auto;*/
+}
+
+#family-table td{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+#family-table li{
+    text-indent: 20px;
+    list-style-type: none;
+}
+
+#family-table p{
+    text-indent: 0px;
+    word-break: break-all;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+
+#family-table i{
+    padding-bottom: 15px;
+}
+
+#family-table li i{
+    padding-right: 10px;
+    font-size: 10px;
+}
+
+#family-table td:first-child {
+    border-right: 1px solid #ddd;
+}
