@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'vmp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'vmp',
+        'NAME': 'db_in_develop',  # deploy db: vmp
         'USER': 'ants',
         'PASSWORD': 'project319',
         'HOST': 'localhost',
