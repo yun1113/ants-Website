@@ -2,7 +2,7 @@ from django.conf.urls import url
 from django.contrib import admin
 from malwaredb.views import malware_search, malware_upload, malware_detail, \
     malware_download, load_hooklog_page, contact, malware_family, malware_behavior
-from user_account.views import register
+from user_account.views import register, logout, login
 from django.conf.urls import handler400, handler403, handler404, handler500
 
 handler404 = 'malwaredb.views.bad_request'
@@ -20,6 +20,8 @@ urlpatterns = [
     # url(r'^malwarefamily2/$', malware_family2),
     url(r'^contact/$', contact),
     url(r'^register/$', register),
+    url(r'^login/$', login),
+    url(r'^logout/$', logout),
 
     url(r'^analysis/(?P<hash_value>\w+)/(?P<page>\w+)$', load_hooklog_page),  # detail hooklog tab
     # url(r'^virustotal/(?P<hash>\w+)/$', loadvt),
