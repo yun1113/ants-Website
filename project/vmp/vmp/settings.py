@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
     'django_extensions',
     'malwaredb',
+    'user_account',
     'djcelery',
     'kombu.transport.django',
 ]
