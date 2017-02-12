@@ -4,8 +4,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.http import HttpResponseRedirect
 from django.contrib import auth
 
-from malwaredb.forms import MalwareUploadFileForm, ContactForm, UserCreationForm
-from malwaredb.models import Malware, Upload
+from malwaredb.forms import UserCreationForm
 from user_account.models import UserAccount
 
 from datetime import datetime

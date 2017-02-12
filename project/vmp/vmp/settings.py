@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'djcelery',
     'kombu.transport.django',
     'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -116,9 +117,9 @@ CACHES = {
 }
 
 REST_FRAMEWORK = {
-    # session login
+    # use token
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
     ],
     # login to use
     'DEFAULT_PERMISSION_CLASSES': [
