@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'user_account',
     'djcelery',
     'kombu.transport.django',
+    'rest_framework',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -114,6 +115,16 @@ CACHES = {
     }
 }
 
+REST_FRAMEWORK = {
+    # session login
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+    # login to use
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+}
 
 
 # Password validation
