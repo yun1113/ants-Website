@@ -1,19 +1,25 @@
-from django.contrib import admin
-
-from .models import UserAccount
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.models import User
 from django.contrib import admin
 
-from models import AuditEntry
+from models import AuditEntry, UserAccount
+from malwaredb.models import Upload
 
-class UserAccountInline(admin.StackedInline):
+from nested_inline.admin import NestedStackedInline, NestedModelAdmin
+
+
+class UploadInline(NestedStackedInline):
+    model = Upload
+
+
+class UserAccountInline(NestedStackedInline):
     model = UserAccount
     can_delete = False
+    # inlines = (UploadInline, )
 
 
 # Define a new User admin
-class UserAdmin(BaseUserAdmin):
+class UserAdmin(BaseUserAdmin, NestedModelAdmin):
     inlines = (UserAccountInline, )
 
 

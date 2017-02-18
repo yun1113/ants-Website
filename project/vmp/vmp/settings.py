@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'djcelery',
     'kombu.transport.django',
     'rest_framework',
+    'nested_inline',
 ]
 
 MIDDLEWARE_CLASSES = [
