@@ -12,7 +12,7 @@ handler500 = 'malwaredb.views.server_error'
 urlpatterns = [
 
     url(r'^admin/', admin.site.urls),
-    url(r'^malwareupload/$', malware_upload),  # upload
+    url(r'^index/$', malware_upload),  # upload
     url(r'^malwaredb/$', malware_search),  # search
     url(r'^malwaredetail/$', malware_detail),  # detail
     url(r'^malwaredownload/$', malware_download),  # download

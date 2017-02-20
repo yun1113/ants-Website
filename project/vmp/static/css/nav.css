@@ -38,3 +38,11 @@
 .nav-form .btn:hover{
     background: #00aace;
 }
+
+.errorlist li{
+    color: red;
+}
+
+.modal-body li{
+    color: red;
+}
