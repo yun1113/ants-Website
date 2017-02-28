@@ -1,0 +1,20 @@
+#login_dialog .modal-title, #signup_dialog .modal-title{
+    text-align: center;
+}
+
+#login_dialog input[type="submit"], #signup_dialog input[type="submit"]{
+    width: 100%;
+    margin-top: 10px;
+}
+
+#login-form, #signup-form{
+    margin: 0 auto;
+    width: 400px;
+}
+
+#login-form .input-lg, #signup-form .input-lg{
+    height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}

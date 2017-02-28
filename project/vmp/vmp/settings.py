@@ -47,8 +47,12 @@ INSTALLED_APPS = [
 
     'django_extensions',
     'malwaredb',
+    'user_account',
     'djcelery',
     'kombu.transport.django',
+    'rest_framework',
+    'rest_framework.authtoken',
+    'rest_framework_expiring_authtoken',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -89,7 +93,7 @@ WSGI_APPLICATION = 'vmp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'vmp',
+        'NAME': 'db_in_develop',  # deploy db: vmp
         'USER': 'ants',
         'PASSWORD': 'project319',
         'HOST': 'localhost',
@@ -113,7 +117,21 @@ CACHES = {
     }
 }
 
+REST_FRAMEWORK = {
+    # use token
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_expiring_authtoken.authentication.ExpiringTokenAuthentication',
+    ],
+    # login to use
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'EXCEPTION_HANDLER': 'malwaredb.utils.custom_exception_handler.custom_exception_handler',
 
+}
+
+import datetime
+EXPIRING_TOKEN_LIFESPAN = datetime.timedelta(hours=2)
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
