@@ -2,9 +2,8 @@ from django.conf.urls import url
 from django.contrib import admin
 from malwaredb.views import malware_search, malware_upload, malware_detail, \
     malware_download, load_hooklog_page, contact, malware_family, malware_behavior, \
-    SubmitFileView, GetHooklogView, CustomObtainAuthToken
+    SubmitFileView, GetHooklogView, CustomObtainExpiringAuthToken
 from user_account.views import register, logout, login
-from rest_framework.authtoken import views as get_token_view
 from django.conf.urls import handler400, handler403, handler404, handler500
 
 handler404 = 'malwaredb.views.bad_request'
@@ -27,7 +26,7 @@ urlpatterns = [
     url(r'^logout/$', logout),
 
     # api
-    url(r'^request_token/', CustomObtainAuthToken.as_view()),
+    url(r'^request_token/', CustomObtainExpiringAuthToken.as_view()),
     url(r'^submit_file/', SubmitFileView.as_view()),
     url(r'^get_hooklog/', GetHooklogView.as_view()),
 
