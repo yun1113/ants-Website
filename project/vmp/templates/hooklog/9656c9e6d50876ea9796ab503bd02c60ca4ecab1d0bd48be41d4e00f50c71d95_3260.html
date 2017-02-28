@@ -1,0 +1,1402 @@
+<html>
+<head>
+<style>
+   pre{
+      font-size: 15px;
+    }
+</style>
+</head>
+<body>
+<pre>9656c9e6d50876ea9796ab503bd02c60ca4ecab1d0bd48be41d4e00f50c71d95_3260.trace.hooklog Bahavior Analysis</pre>
+<pre><b># 23978000   LoadLibrary</b>
+    lpFileName=C:\WINDOWS\system32\IMM32.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 24055000   LoadLibrary</b>
+    lpFileName=gdi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 24024000   LoadLibrary</b>
+    lpFileName=LPK.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 24077000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+    Return=0
+</pre>
+<pre><b># 24077000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+    Return=2
+</pre>
+<pre><b># 24089000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\CIMOM\Logging
+    Return=0
+    type=REG_SZ
+    data=1
+</pre>
+<pre><b># 24090000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\CIMOM\Logging Directory
+    Return=0
+    type=REG_SZ
+    data=
+</pre>
+<pre><b># 24090000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\CIMOM\Logging Directory
+    Return=0
+    type=REG_SZ
+    data=C:\WINDOWS\system32\WBEM\Logs\
+</pre>
+<pre><b># 24092000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\CIMOM\Log File Max Size
+    Return=0
+    type=REG_SZ
+    data=
+</pre>
+<pre><b># 24093000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WBEM\CIMOM\Log File Max Size
+    Return=0
+    type=REG_SZ
+    data=65536
+</pre>
+<pre><b># 24106000   CreateFile</b>
+    hName=\\.\Ip
+    desiredAccess=GENERIC_EXECUTE 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 24106000   CreateFile</b>
+    hName=\\.\Ip
+    desiredAccess=GENERIC_EXECUTE 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 24140000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\Winmm\wheel
+    Return=0
+</pre>
+<pre><b># 24147000   RegCreateKey</b>
+    hKey=77c\Software\Microsoft\Multimedia\Audio
+    Return=0
+</pre>
+<pre><b># 24147000   RegQueryValue</b>
+    hKey=77c\Software\Microsoft\Multimedia\Audio\SystemFormats
+    Return=0
+</pre>
+<pre><b># 24155000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.imaadpcm\fdwSupport
+    Return=0
+    type=REG_DWORD
+    data=1
+</pre>
+<pre><b># 24155000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.imaadpcm\cFormatTags
+    Return=0
+    type=REG_DWORD
+    data=2
+</pre>
+<pre><b># 24155000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.imaadpcm\aFormatTagCache
+    Return=0
+    type=REG_BINARY
+    data=01000000100000001100000014000000
+</pre>
+<pre><b># 24156000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.imaadpcm\cFilterTags
+    Return=0
+    type=REG_DWORD
+    data=0
+</pre>
+<pre><b># 24158000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msadpcm\fdwSupport
+    Return=0
+    type=REG_DWORD
+    data=1
+</pre>
+<pre><b># 24158000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msadpcm\cFormatTags
+    Return=0
+    type=REG_DWORD
+    data=2
+</pre>
+<pre><b># 24158000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msadpcm\aFormatTagCache
+    Return=0
+    type=REG_BINARY
+    data=01000000100000000200000032000000
+</pre>
+<pre><b># 24158000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msadpcm\cFilterTags
+    Return=0
+    type=REG_DWORD
+    data=0
+</pre>
+<pre><b># 24160000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msg711\fdwSupport
+    Return=0
+    type=REG_DWORD
+    data=1
+</pre>
+<pre><b># 24160000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msg711\cFormatTags
+    Return=0
+    type=REG_DWORD
+    data=3
+</pre>
+<pre><b># 24160000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msg711\aFormatTagCache
+    Return=0
+    type=REG_BINARY
+    data=010000001000000006000000120000000700000012000000
+</pre>
+<pre><b># 24160000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msg711\cFilterTags
+    Return=0
+    type=REG_DWORD
+    data=0
+</pre>
+<pre><b># 24163000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msgsm610\fdwSupport
+    Return=0
+    type=REG_DWORD
+    data=1
+</pre>
+<pre><b># 24163000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msgsm610\cFormatTags
+    Return=0
+    type=REG_DWORD
+    data=2
+</pre>
+<pre><b># 24163000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msgsm610\aFormatTagCache
+    Return=0
+    type=REG_BINARY
+    data=01000000100000003100000014000000
+</pre>
+<pre><b># 24163000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msgsm610\cFilterTags
+    Return=0
+    type=REG_DWORD
+    data=0
+</pre>
+<pre><b># 24165000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.trspch\fdwSupport
+    Return=0
+    type=REG_DWORD
+    data=1
+</pre>
+<pre><b># 24165000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.trspch\cFormatTags
+    Return=0
+    type=REG_DWORD
+    data=2
+</pre>
+<pre><b># 24166000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.trspch\aFormatTagCache
+    Return=0
+    type=REG_BINARY
+    data=01000000100000002200000032000000
+</pre>
+<pre><b># 24166000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.trspch\cFilterTags
+    Return=0
+    type=REG_DWORD
+    data=0
+</pre>
+<pre><b># 24169000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msg723\fdwSupport
+    Return=0
+    type=REG_DWORD
+    data=1
+</pre>
+<pre><b># 24169000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msg723\cFormatTags
+    Return=0
+    type=REG_DWORD
+    data=2
+</pre>
+<pre><b># 24170000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msg723\aFormatTagCache
+    Return=0
+    type=REG_BINARY
+    data=0100000010000000420000001C000000
+</pre>
+<pre><b># 24170000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msg723\cFilterTags
+    Return=0
+    type=REG_DWORD
+    data=0
+</pre>
+<pre><b># 24174000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msaudio1\fdwSupport
+    Return=0
+    type=REG_DWORD
+    data=1
+</pre>
+<pre><b># 24174000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msaudio1\cFormatTags
+    Return=0
+    type=REG_DWORD
+    data=3
+</pre>
+<pre><b># 24174000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msaudio1\aFormatTagCache
+    Return=0
+    type=REG_BINARY
+    data=01000000120000006001000016000000610100001C000000
+</pre>
+<pre><b># 24175000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.msaudio1\cFilterTags
+    Return=0
+    type=REG_DWORD
+    data=0
+</pre>
+<pre><b># 24180000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.sl_anet\fdwSupport
+    Return=0
+    type=REG_DWORD
+    data=1
+</pre>
+<pre><b># 24180000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.sl_anet\cFormatTags
+    Return=0
+    type=REG_DWORD
+    data=2
+</pre>
+<pre><b># 24181000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.sl_anet\aFormatTagCache
+    Return=0
+    type=REG_BINARY
+    data=01000000100000003001000016000000
+</pre>
+<pre><b># 24181000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.sl_anet\cFilterTags
+    Return=0
+    type=REG_DWORD
+    data=0
+</pre>
+<pre><b># 24183000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.iac2\fdwSupport
+    Return=0
+    type=REG_DWORD
+    data=1
+</pre>
+<pre><b># 24183000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.iac2\cFormatTags
+    Return=0
+    type=REG_DWORD
+    data=2
+</pre>
+<pre><b># 24184000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.iac2\aFormatTagCache
+    Return=0
+    type=REG_BINARY
+    data=01000000100000000204000014000000
+</pre>
+<pre><b># 24184000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.iac2\cFilterTags
+    Return=0
+    type=REG_DWORD
+    data=0
+</pre>
+<pre><b># 24187000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.l3acm\fdwSupport
+    Return=0
+    type=REG_DWORD
+    data=1
+</pre>
+<pre><b># 24187000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.l3acm\cFormatTags
+    Return=0
+    type=REG_DWORD
+    data=2
+</pre>
+<pre><b># 24187000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.l3acm\aFormatTagCache
+    Return=0
+    type=REG_BINARY
+    data=0100000010000000550000001E000000
+</pre>
+<pre><b># 24187000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\AudioCompressionManager\DriverCache\msacm.l3acm\cFilterTags
+    Return=0
+    type=REG_DWORD
+    data=0
+</pre>
+<pre><b># 24188000   RegCreateKey</b>
+    hKey=770\Software\Microsoft\Multimedia\Audio Compression Manager\
+    Return=0
+</pre>
+<pre><b># 24188000   RegCreateKey</b>
+    hKey=770\Software\Microsoft\Multimedia\Audio Compression Manager\\MSACM
+    Return=0
+</pre>
+<pre><b># 24189000   RegQueryValue</b>
+    hKey=770\Software\Microsoft\Multimedia\Audio Compression Manager\\MSACM\NoPCMConverter
+    Return=2
+</pre>
+<pre><b># 24194000   RegCreateKey</b>
+    hKey=770\Software\Microsoft\Multimedia\Audio Compression Manager\
+    Return=0
+</pre>
+<pre><b># 24195000   RegCreateKey</b>
+    hKey=770\Software\Microsoft\Multimedia\Audio Compression Manager\\Priority v4.00
+    Return=0
+</pre>
+<pre><b># 24195000   RegQueryValue</b>
+    hKey=770\Software\Microsoft\Multimedia\Audio Compression Manager\\Priority v4.00\Priority1
+    Return=2
+</pre>
+<pre><b># 24201000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SYSTEM\Setup\SystemSetupInProgress
+    Return=0
+    type=REG_DWORD
+    data=0
+</pre>
+<pre><b># 24298000   CreateFile</b>
+    hName=C:\WINDOWS\WindowsShell.Manifest
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 24321000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+    Return=2
+</pre>
+<pre><b># 24322000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+    Return=2
+</pre>
+<pre><b># 24323000   RegEnumValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+    type=REG_DWORD
+    data=2
+    Return=0
+</pre>
+<pre><b># 24227000   LoadLibrary</b>
+    lpFileName=comctl32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 24405000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+    Return=2
+</pre>
+<pre><b># 24406000   LoadLibrary</b>
+    lpFileName=imm32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 24344000   LoadLibrary</b>
+    lpFileName=comctl32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 24443000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\winlogon\UserEnvDebugLevel
+    Return=2
+</pre>
+<pre><b># 24444000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\winlogon\ChkAccDebugLevel
+    Return=2
+</pre>
+<pre><b># 24446000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\ProductOptions\ProductType
+    Return=0
+    type=REG_SZ
+    data=WinNT
+</pre>
+<pre><b># 24456000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\Personal
+    Return=0
+    type=REG_EXPAND_SZ
+    data=%
+</pre>
+<pre><b># 24457000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\Local Settings
+    Return=0
+    type=REG_EXPAND_SZ
+    data=%
+</pre>
+<pre><b># 24462000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\winlogon\RsopDebugLevel
+    Return=2
+</pre>
+<pre><b># 24463000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\winlogon\UserEnvDebugLevel
+    Return=2
+</pre>
+<pre><b># 24463000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\winlogon\RsopLogging
+    Return=2
+</pre>
+<pre><b># 24464000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\winlogon\UserEnvDebugLevel
+    Return=2
+</pre>
+<pre><b># 24472000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ThemeManager\Compositing
+    Return=2
+</pre>
+<pre><b># 24478000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Control Panel\Desktop\LameButtonText
+    Return=2
+</pre>
+<pre><b># 24545000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\MaxRpcSize
+    Return=2
+</pre>
+<pre><b># 24551000   LoadLibrary</b>
+    lpFileName=rpcrt4.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 24572000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\MaximumAllowedAllocationSize
+    Return=2
+</pre>
+<pre><b># 24592000   CreateFile</b>
+    hName=\\.\PIPE\lsarpc
+    desiredAccess=GENERIC_READ GENERIC_WRITE 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 24604000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\Com+Enabled
+    Return=0
+    type=REG_DWORD
+    data=1
+</pre>
+<pre><b># 24654000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\MinimumFreeMemPercentageToCreateProcess
+    Return=2
+</pre>
+<pre><b># 24654000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\MinimumFreeMemPercentageToCreateObject
+    Return=2
+</pre>
+<pre><b># 24604000   LoadLibrary</b>
+    lpFileName=CLBCATQ.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 24658000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\Com+Enabled
+    Return=0
+    type=REG_DWORD
+    data=1
+</pre>
+<pre><b># 24658000   LoadLibrary</b>
+    lpFileName=CLBCATQ.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 24696000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 24699000   CreateFile</b>
+    hName=C:\WINDOWS\Registration\R000000000007.clb
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 24721000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 24733000   RegQueryValue</b>
+    hKey=73a\CLSID\{4590F811-1D3A-11D0-891F-00AA004B2E24}\InprocServer32\InprocServer32
+    Return=2
+</pre>
+<pre><b># 24738000   RegQueryValue</b>
+    hKey=73a\CLSID\{4590F811-1D3A-11D0-891F-00AA004B2E24}\InprocServer32
+    Return=0
+    type=REG_SZ
+    data=C:\WINDOWS\system32\wbem\wbemprox.dll
+</pre>
+<pre><b># 24746000   RegQueryValue</b>
+    hKey=73a\CLSID\{4590F811-1D3A-11D0-891F-00AA004B2E24}\AppID
+    Return=2
+</pre>
+<pre><b># 24753000   RegQueryValue</b>
+    hKey=73a\CLSID\{4590F811-1D3A-11D0-891F-00AA004B2E24}\InprocServer32\ThreadingModel
+    Return=0
+    type=REG_SZ
+    data=Both
+</pre>
+<pre><b># 24816000   RegCreateKey</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM
+    Return=0
+</pre>
+<pre><b># 24818000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM\Logging Directory
+    Return=0
+    type=REG_SZ
+    data=
+</pre>
+<pre><b># 24818000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM\Logging Directory
+    Return=0
+    type=REG_SZ
+    data=C:\WINDOWS\system32\WBEM\Logs\
+</pre>
+<pre><b># 24819000   RegCreateKey</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM
+    Return=0
+</pre>
+<pre><b># 24819000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM\Logging
+    Return=0
+    type=REG_SZ
+    data=1
+</pre>
+<pre><b># 24820000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM\Log File Max Size
+    Return=0
+    type=REG_SZ
+    data=65536
+</pre>
+<pre><b># 24820000   RegCreateKey</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM
+    Return=0
+</pre>
+<pre><b># 24820000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM\Repository Directory
+    Return=0
+    type=REG_EXPAND_SZ
+    data=
+</pre>
+<pre><b># 24820000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM\Repository Directory
+    Return=0
+    type=REG_EXPAND_SZ
+    data=%
+</pre>
+<pre><b># 24829000   LoadLibrary</b>
+    lpFileName=oleaut32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 24833000   LoadLibrary</b>
+    lpFileName=C:\WINDOWS\system32\kernel32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 24848000   RegCreateKey</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\\Microsoft\\Wbem\\WMIC
+    Return=0
+</pre>
+<pre><b># 24848000   RegCreateKey</b>
+    hKey=HKEY_CURRENT_USER\SOFTWARE\\Microsoft\\Wbem\\WMIC
+    Return=0
+</pre>
+<pre><b># 24850000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\\Microsoft\\Wbem\\WMIC\mofcompstatus
+    Return=0
+</pre>
+<pre><b># 24850000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\SOFTWARE\\Microsoft\\Wbem\\WMIC\WMICLC
+    Return=0
+</pre>
+<pre><b># 24850000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\SOFTWARE\\Microsoft\\Wbem\\WMIC\mofcompMUIStatus
+    Return=0
+</pre>
+<pre><b># 24850000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\\Microsoft\\Wbem\\WMIC\mofcompstatus
+    Return=0
+    type=REG_SZ
+    data=1
+</pre>
+<pre><b># 24850000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\SOFTWARE\\Microsoft\\Wbem\\WMIC\WMICLC
+    Return=0
+    type=REG_DWORD
+    data=1033
+</pre>
+<pre><b># 24850000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\SOFTWARE\\Microsoft\\Wbem\\WMIC\mofcompMUIStatus
+    Return=0
+    type=REG_DWORD
+    data=-1
+</pre>
+<pre><b># 24852000   CreateFile</b>
+    hName=C:\WINDOWS\system32\wbem\Cli.mof
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 24853000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\\Microsoft\\Wbem\\WMIC\Cli.mof
+    Return=0
+    type=REG_SZ
+    data=128526480000000000
+</pre>
+<pre><b># 24854000   CreateFile</b>
+    hName=C:\WINDOWS\system32\wbem\CliEgAliases.mof
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 24855000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\\Microsoft\\Wbem\\WMIC\CliEgAliases.mof
+    Return=0
+    type=REG_SZ
+    data=128526480000000000
+</pre>
+<pre><b># 24856000   CreateFile</b>
+    hName=C:\WINDOWS\system32\wbem\CliEgAliases.mfl
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 24857000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\\Microsoft\\Wbem\\WMIC\CliEgAliases.mfl
+    Return=0
+    type=REG_SZ
+    data=128526480000000000
+</pre>
+<pre><b># 24859000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Wbem\CIMOM\Logging
+    Return=0
+    type=REG_SZ
+    data=1
+</pre>
+<pre><b># 24859000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Wbem\CIMOM\Logging Directory
+    Return=0
+    type=REG_SZ
+    data=
+</pre>
+<pre><b># 24860000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Wbem\CIMOM\Logging Directory
+    Return=0
+    type=REG_SZ
+    data=C:\WINDOWS\system32\WBEM\Logs\
+</pre>
+<pre><b># 24860000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Wbem\CIMOM\Log File Max Size
+    Return=0
+    type=REG_SZ
+    data=65536
+</pre>
+<pre><b># 24861000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 24864000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 24871000   RegQueryValue</b>
+    hKey=73a\CLSID\{F6D90F12-9C73-11D3-B32E-00C04F990BB4}\InprocServer32\InprocServer32
+    Return=2
+</pre>
+<pre><b># 24879000   RegQueryValue</b>
+    hKey=73a\CLSID\{F6D90F12-9C73-11D3-B32E-00C04F990BB4}\InprocServer32
+    Return=0
+    type=REG_SZ
+    data=C:\WINDOWS\system32\msxml3.dll
+</pre>
+<pre><b># 24887000   RegQueryValue</b>
+    hKey=73a\CLSID\{F6D90F12-9C73-11D3-B32E-00C04F990BB4}\AppID
+    Return=2
+</pre>
+<pre><b># 24893000   RegQueryValue</b>
+    hKey=73a\CLSID\{F6D90F12-9C73-11D3-B32E-00C04F990BB4}\InprocServer32\ThreadingModel
+    Return=0
+    type=REG_SZ
+    data=Both
+</pre>
+<pre><b># 24976000   CreateFile</b>
+    hName=C:\WINDOWS\system32\msxml3r.dll
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 25158000   LoadLibrary</b>
+    lpFileName=OLEAUT32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 25283000   LoadLibrary</b>
+    lpFileName=comctl32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 25316000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\DisableImprovedZoneCheck
+    Return=2
+</pre>
+<pre><b># 25324000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_OBJECT_CACHING\WMIC.exe
+    Return=2
+</pre>
+<pre><b># 25324000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_OBJECT_CACHING\*
+    Return=2
+</pre>
+<pre><b># 25325000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ZONE_ELEVATION\WMIC.exe
+    Return=2
+</pre>
+<pre><b># 25326000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ZONE_ELEVATION\*
+    Return=2
+</pre>
+<pre><b># 25327000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_HANDLING\WMIC.exe
+    Return=2
+</pre>
+<pre><b># 25327000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_HANDLING\*
+    Return=2
+</pre>
+<pre><b># 25328000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_SNIFFING\WMIC.exe
+    Return=2
+</pre>
+<pre><b># 25328000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_SNIFFING\*
+    Return=2
+</pre>
+<pre><b># 25330000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WINDOW_RESTRICTIONS\WMIC.exe
+    Return=2
+</pre>
+<pre><b># 25330000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WINDOW_RESTRICTIONS\*
+    Return=2
+</pre>
+<pre><b># 25331000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WEBOC_POPUPMANAGEMENT\WMIC.exe
+    Return=2
+</pre>
+<pre><b># 25333000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WEBOC_POPUPMANAGEMENT\*
+    Return=2
+</pre>
+<pre><b># 25333000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BEHAVIORS\WMIC.exe
+    Return=2
+</pre>
+<pre><b># 25334000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BEHAVIORS\*
+    Return=0
+    type=REG_DWORD
+    data=1
+</pre>
+<pre><b># 25334000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_DISABLE_MK_PROTOCOL\WMIC.exe
+    Return=2
+</pre>
+<pre><b># 25337000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_DISABLE_MK_PROTOCOL\*
+    Return=0
+    type=REG_DWORD
+    data=1
+</pre>
+<pre><b># 25337000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_LOCALMACHINE_LOCKDOWN\WMIC.exe
+    Return=2
+</pre>
+<pre><b># 25338000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_LOCALMACHINE_LOCKDOWN\*
+    Return=2
+</pre>
+<pre><b># 25338000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_LOCALMACHINE_LOCKDOWN\WMIC.exe
+    Return=2
+</pre>
+<pre><b># 25338000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_LOCALMACHINE_LOCKDOWN\*
+    Return=2
+</pre>
+<pre><b># 25343000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_PROTOCOL_LOCKDOWN\WMIC.exe
+    Return=2
+</pre>
+<pre><b># 25344000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_PROTOCOL_LOCKDOWN\*
+    Return=2
+</pre>
+<pre><b># 25345000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_SAFE_BINDTOOBJECT\WMIC.exe
+    Return=2
+</pre>
+<pre><b># 25345000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_SAFE_BINDTOOBJECT\*
+    Return=2
+</pre>
+<pre><b># 25171000   LoadLibrary</b>
+    lpFileName=urlmon.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 25381000   LoadLibrary</b>
+    lpFileName=uxtheme.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 25582000   LoadLibrary</b>
+    lpFileName=comctl32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 25521000   LoadLibrary</b>
+    lpFileName=mlang.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 25625000   RegQueryValue</b>
+    hKey=HKEY_CLASSES_ROOT\.xml\Content Type
+    Return=0
+    type=REG_SZ
+    data=text/xml
+</pre>
+<pre><b># 25630000   CreateFile</b>
+    hName=C:\WINDOWS\system32\wbem\XSL-Mappings.xml
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 25633000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\IsTextPlainHonored
+    Return=2
+</pre>
+<pre><b># 25912000   CreateFile</b>
+    hName=TempWmicBatchFile.bat
+    desiredAccess=GENERIC_WRITE 
+    creationDisposition=CREATE_ALWAYS
+    Return=SUCCESS
+</pre>
+<pre><b># 25942000   CreateFile</b>
+    hName=CONIN$
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 25944000   CreateFile</b>
+    hName=TempWmicBatchFile.bat
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 25972000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 25975000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 25994000   RegQueryValue</b>
+    hKey=73a\CLSID\{8BC3F05E-D86B-11D0-A075-00C04FB68820}\AppID
+    Return=0
+    type=REG_SZ
+    data={8BC3F05E-D86B-11D0-A075-00C04FB68820}
+</pre>
+<pre><b># 25997000   RegQueryValue</b>
+    hKey=73a\AppID\{8BC3F05E-D86B-11D0-A075-00C04FB68820}\DllSurrogate
+    Return=2
+</pre>
+<pre><b># 25998000   RegQueryValue</b>
+    hKey=73a\AppID\{8BC3F05E-D86B-11D0-A075-00C04FB68820}\LocalService
+    Return=0
+</pre>
+<pre><b># 26011000   CreateThread</b>
+    dwThreadId=519396
+    Return=SUCCESS
+</pre>
+<pre><b># 26029000   LoadLibrary</b>
+    lpFileName=OLE32
+    Return=SUCCESS
+</pre>
+<pre><b># 26037000   CreateThread</b>
+    dwThreadId=519876
+    Return=SUCCESS
+</pre>
+<pre><b># 26041000   LoadLibrary</b>
+    lpFileName=OLE32.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 26088000   RegQueryValue</b>
+    hKey=HKEY_CLASSES_ROOT\Interface\{F309AD18-D86A-11D0-A075-00C04FB68820}\ProxyStubClsid32
+    Return=0
+    type=REG_SZ
+    data={7C857801-7381-11CF-884D-00AA004B2E24}
+</pre>
+<pre><b># 26091000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 26094000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 26101000   RegQueryValue</b>
+    hKey=73a\CLSID\{7C857801-7381-11CF-884D-00AA004B2E24}\InprocServer32\InprocServer32
+    Return=2
+</pre>
+<pre><b># 26107000   RegQueryValue</b>
+    hKey=73a\CLSID\{7C857801-7381-11CF-884D-00AA004B2E24}\InprocServer32
+    Return=0
+    type=REG_SZ
+    data=C:\WINDOWS\system32\wbem\wbemsvc.dll
+</pre>
+<pre><b># 26115000   RegQueryValue</b>
+    hKey=73a\CLSID\{7C857801-7381-11CF-884D-00AA004B2E24}\AppID
+    Return=2
+</pre>
+<pre><b># 26124000   RegQueryValue</b>
+    hKey=73a\CLSID\{7C857801-7381-11CF-884D-00AA004B2E24}\InprocServer32\ThreadingModel
+    Return=0
+    type=REG_SZ
+    data=Both
+</pre>
+<pre><b># 26180000   CreateFile</b>
+    hName=\\.\PIPE\lsarpc
+    desiredAccess=GENERIC_READ GENERIC_WRITE 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 26195000   RegQueryValue</b>
+    hKey=HKEY_CLASSES_ROOT\Interface\{D4781CD6-E5D3-44DF-AD94-930EFE48A887}\ProxyStubClsid32
+    Return=0
+    type=REG_SZ
+    data={7C857801-7381-11CF-884D-00AA004B2E24}
+</pre>
+<pre><b># 26219000   RegQueryValue</b>
+    hKey=HKEY_CLASSES_ROOT\Interface\{9556DC99-828C-11CF-A37E-00AA003240C7}\ProxyStubClsid32
+    Return=0
+    type=REG_SZ
+    data={D68AF00A-29CB-43FA-8504-CE99A996D9EA}
+</pre>
+<pre><b># 26222000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 26225000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 26232000   RegQueryValue</b>
+    hKey=73a\CLSID\{D68AF00A-29CB-43FA-8504-CE99A996D9EA}\InprocServer32\InprocServer32
+    Return=2
+</pre>
+<pre><b># 26237000   RegQueryValue</b>
+    hKey=73a\CLSID\{D68AF00A-29CB-43FA-8504-CE99A996D9EA}\InprocServer32
+    Return=0
+    type=REG_SZ
+    data=C:\WINDOWS\system32\wbem\fastprox.dll
+</pre>
+<pre><b># 26245000   RegQueryValue</b>
+    hKey=73a\CLSID\{D68AF00A-29CB-43FA-8504-CE99A996D9EA}\AppID
+    Return=2
+</pre>
+<pre><b># 26254000   RegQueryValue</b>
+    hKey=73a\CLSID\{D68AF00A-29CB-43FA-8504-CE99A996D9EA}\InprocServer32\ThreadingModel
+    Return=0
+    type=REG_SZ
+    data=Both
+</pre>
+<pre><b># 26353000   RegCreateKey</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters
+    Return=0
+</pre>
+<pre><b># 26353000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\QueryAdapterName
+    Return=2
+</pre>
+<pre><b># 26353000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\DisableAdapterDomainName
+    Return=2
+</pre>
+<pre><b># 26354000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\UseDomainNameDevolution
+    Return=2
+</pre>
+<pre><b># 26354000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\UseDomainNameDevolution
+    Return=0
+    type=REG_DWORD
+    data=1
+</pre>
+<pre><b># 26354000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\PrioritizeRecordData
+    Return=2
+</pre>
+<pre><b># 26354000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\PrioritizeRecordData
+    Return=2
+</pre>
+<pre><b># 26354000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\AllowUnqualifiedQuery
+    Return=2
+</pre>
+<pre><b># 26355000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\AllowUnqualifiedQuery
+    Return=2
+</pre>
+<pre><b># 26355000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\AppendToMultiLabelName
+    Return=2
+</pre>
+<pre><b># 26355000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\ScreenBadTlds
+    Return=2
+</pre>
+<pre><b># 26355000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\ScreenUnreachableServers
+    Return=2
+</pre>
+<pre><b># 26355000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\FilterClusterIp
+    Return=2
+</pre>
+<pre><b># 26355000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\WaitForNameErrorOnAll
+    Return=2
+</pre>
+<pre><b># 26356000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\UseEdns
+    Return=2
+</pre>
+<pre><b># 26356000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\QueryIpMatching
+    Return=2
+</pre>
+<pre><b># 26356000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\UseHostsFile
+    Return=2
+</pre>
+<pre><b># 26357000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\RegistrationEnabled
+    Return=2
+</pre>
+<pre><b># 26357000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\DisableDynamicUpdate
+    Return=2
+</pre>
+<pre><b># 26357000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\RegisterPrimaryName
+    Return=2
+</pre>
+<pre><b># 26357000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\RegisterAdapterName
+    Return=2
+</pre>
+<pre><b># 26357000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\EnableAdapterDomainNameRegistration
+    Return=2
+</pre>
+<pre><b># 26357000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\RegisterReverseLookup
+    Return=2
+</pre>
+<pre><b># 26358000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\DisableReverseAddressRegistrations
+    Return=2
+</pre>
+<pre><b># 26358000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\RegisterWanAdapters
+    Return=2
+</pre>
+<pre><b># 26358000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\DisableWanDynamicUpdate
+    Return=2
+</pre>
+<pre><b># 26358000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\RegistrationTtl
+    Return=2
+</pre>
+<pre><b># 26359000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\DefaultRegistrationTTL
+    Return=2
+</pre>
+<pre><b># 26359000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\RegistrationRefreshInterval
+    Return=2
+</pre>
+<pre><b># 26359000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\DefaultRegistrationRefreshInterval
+    Return=2
+</pre>
+<pre><b># 26360000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\RegistrationMaxAddressCount
+    Return=2
+</pre>
+<pre><b># 26360000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\MaxNumberOfAddressesToRegister
+    Return=2
+</pre>
+<pre><b># 26360000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\UpdateSecurityLevel
+    Return=2
+</pre>
+<pre><b># 26360000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\UpdateSecurityLevel
+    Return=2
+</pre>
+<pre><b># 26361000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\UpdateZoneExcludeFile
+    Return=2
+</pre>
+<pre><b># 26361000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\UpdateTopLevelDomainZones
+    Return=2
+</pre>
+<pre><b># 26361000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\DnsTest
+    Return=2
+</pre>
+<pre><b># 26361000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\MaxCacheSize
+    Return=2
+</pre>
+<pre><b># 26361000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\MaxCacheTtl
+    Return=2
+</pre>
+<pre><b># 26361000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\MaxNegativeCacheTtl
+    Return=2
+</pre>
+<pre><b># 26362000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\AdapterTimeoutLimit
+    Return=2
+</pre>
+<pre><b># 26362000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\ServerPriorityTimeLimit
+    Return=2
+</pre>
+<pre><b># 26362000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\MaxCachedSockets
+    Return=2
+</pre>
+<pre><b># 26362000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\MulticastListenLevel
+    Return=2
+</pre>
+<pre><b># 26363000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DnsCache\Parameters\MulticastSendLevel
+    Return=2
+</pre>
+<pre><b># 26363000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\Setup\SystemSetupInProgress
+    Return=0
+    type=REG_DWORD
+    data=0
+</pre>
+<pre><b># 26363000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\DnsQueryTimeouts
+    Return=2
+</pre>
+<pre><b># 26364000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\DnsQuickQueryTimeouts
+    Return=2
+</pre>
+<pre><b># 26364000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\DnsMulticastQueryTimeouts
+    Return=2
+</pre>
+<pre><b># 26369000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LDAP\LdapClientIntegrity
+    Return=0
+    type=REG_DWORD
+    data=1
+</pre>
+<pre><b># 26371000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM\ProcessID
+    Return=0
+    type=REG_DWORD
+    data=836
+</pre>
+<pre><b># 26371000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM\EnablePrivateObjectHeap
+    Return=2
+</pre>
+<pre><b># 26371000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM\ContextLimit
+    Return=2
+</pre>
+<pre><b># 26372000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM\ObjectLimit
+    Return=2
+</pre>
+<pre><b># 26372000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM\IdentifierLimit
+    Return=2
+</pre>
+<pre><b># 26516000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 26519000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 26526000   RegQueryValue</b>
+    hKey=73a\CLSID\{4590F812-1D3A-11D0-891F-00AA004B2E24}\InprocServer32\InprocServer32
+    Return=2
+</pre>
+<pre><b># 26531000   RegQueryValue</b>
+    hKey=73a\CLSID\{4590F812-1D3A-11D0-891F-00AA004B2E24}\InprocServer32
+    Return=0
+    type=REG_SZ
+    data=C:\WINDOWS\system32\wbem\fastprox.dll
+</pre>
+<pre><b># 26539000   RegQueryValue</b>
+    hKey=73a\CLSID\{4590F812-1D3A-11D0-891F-00AA004B2E24}\AppID
+    Return=2
+</pre>
+<pre><b># 26548000   RegQueryValue</b>
+    hKey=73a\CLSID\{4590F812-1D3A-11D0-891F-00AA004B2E24}\InprocServer32\ThreadingModel
+    Return=0
+    type=REG_SZ
+    data=Both
+</pre>
+<pre><b># 26565000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\WBEM\CIMOM\EnableObjectValidation
+    Return=2
+</pre>
+<pre><b># 26830000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 26833000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 26841000   RegQueryValue</b>
+    hKey=73a\CLSID\{8D1C559D-84F0-4BB3-A7D5-56A7435A9BA6}\InprocServer32\InprocServer32
+    Return=2
+</pre>
+<pre><b># 26846000   RegQueryValue</b>
+    hKey=73a\CLSID\{8D1C559D-84F0-4BB3-A7D5-56A7435A9BA6}\InprocServer32
+    Return=0
+    type=REG_SZ
+    data=C:\WINDOWS\system32\wbem\fastprox.dll
+</pre>
+<pre><b># 26854000   RegQueryValue</b>
+    hKey=73a\CLSID\{8D1C559D-84F0-4BB3-A7D5-56A7435A9BA6}\AppID
+    Return=2
+</pre>
+<pre><b># 26860000   RegQueryValue</b>
+    hKey=73a\CLSID\{8D1C559D-84F0-4BB3-A7D5-56A7435A9BA6}\InprocServer32\ThreadingModel
+    Return=0
+    type=REG_SZ
+    data=Both
+</pre>
+<pre><b># 26966000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 26968000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 26975000   RegQueryValue</b>
+    hKey=73a\CLSID\{674B6698-EE92-11D0-AD71-00C04FD8FDFF}\InprocServer32\InprocServer32
+    Return=2
+</pre>
+<pre><b># 26981000   RegQueryValue</b>
+    hKey=73a\CLSID\{674B6698-EE92-11D0-AD71-00C04FD8FDFF}\InprocServer32
+    Return=0
+    type=REG_SZ
+    data=C:\WINDOWS\system32\wbem\fastprox.dll
+</pre>
+<pre><b># 26989000   RegQueryValue</b>
+    hKey=73a\CLSID\{674B6698-EE92-11D0-AD71-00C04FD8FDFF}\AppID
+    Return=2
+</pre>
+<pre><b># 26996000   RegQueryValue</b>
+    hKey=73a\CLSID\{674B6698-EE92-11D0-AD71-00C04FD8FDFF}\InprocServer32\ThreadingModel
+    Return=0
+    type=REG_SZ
+    data=Both
+</pre>
+<pre><b># 27021000   RegQueryValue</b>
+    hKey=HKEY_CLASSES_ROOT\Interface\{027947E1-D731-11CE-A357-000000000001}\ProxyStubClsid32
+    Return=0
+    type=REG_SZ
+    data={1B1CAD8C-2DAB-11D2-B604-00104B703EFD}
+</pre>
+<pre><b># 27027000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 27033000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 27041000   RegQueryValue</b>
+    hKey=73a\CLSID\{1B1CAD8C-2DAB-11D2-B604-00104B703EFD}\InprocServer32\InprocServer32
+    Return=2
+</pre>
+<pre><b># 27060000   RegQueryValue</b>
+    hKey=73a\CLSID\{1B1CAD8C-2DAB-11D2-B604-00104B703EFD}\InprocServer32
+    Return=0
+    type=REG_SZ
+    data=C:\WINDOWS\system32\wbem\fastprox.dll
+</pre>
+<pre><b># 27073000   RegQueryValue</b>
+    hKey=73a\CLSID\{1B1CAD8C-2DAB-11D2-B604-00104B703EFD}\AppID
+    Return=2
+</pre>
+<pre><b># 27089000   RegQueryValue</b>
+    hKey=73a\CLSID\{1B1CAD8C-2DAB-11D2-B604-00104B703EFD}\InprocServer32\ThreadingModel
+    Return=0
+    type=REG_SZ
+    data=Both
+</pre>
+<pre><b># 27117000   RegQueryValue</b>
+    hKey=HKEY_CLASSES_ROOT\Interface\{1C1C45EE-4395-11D2-B60B-00104B703EFD}\ProxyStubClsid32
+    Return=0
+    type=REG_SZ
+    data={7C857801-7381-11CF-884D-00AA004B2E24}
+</pre>
+<pre><b># 27137000   RegQueryValue</b>
+    hKey=HKEY_CLASSES_ROOT\Interface\{423EC01E-2E35-11D2-B604-00104B703EFD}\ProxyStubClsid32
+    Return=0
+    type=REG_SZ
+    data={7C857801-7381-11CF-884D-00AA004B2E24}
+</pre>
+<pre><b># 27583000   CreateFile</b>
+    hName=CONIN$
+    desiredAccess=GENERIC_READ GENERIC_WRITE 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 27583000   CreateFile</b>
+    hName=CONIN$
+    desiredAccess=GENERIC_READ GENERIC_WRITE 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 27694000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 27697000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+    Return=0
+</pre>
+<pre><b># 27705000   RegQueryValue</b>
+    hKey=73a\CLSID\{2933BF94-7B36-11D2-B20E-00C04F983E60}\InprocServer32\InprocServer32
+    Return=2
+</pre>
+<pre><b># 27710000   RegQueryValue</b>
+    hKey=73a\CLSID\{2933BF94-7B36-11D2-B20E-00C04F983E60}\InprocServer32
+    Return=0
+    type=REG_SZ
+    data=C:\WINDOWS\system32\msxml3.dll
+</pre>
+<pre><b># 27718000   RegQueryValue</b>
+    hKey=73a\CLSID\{2933BF94-7B36-11D2-B20E-00C04F983E60}\AppID
+    Return=2
+</pre>
+<pre><b># 27725000   RegQueryValue</b>
+    hKey=73a\CLSID\{2933BF94-7B36-11D2-B20E-00C04F983E60}\InprocServer32\ThreadingModel
+    Return=0
+    type=REG_SZ
+    data=Both
+</pre>
+<pre><b># 27767000   CreateFile</b>
+    hName=C:\WINDOWS\System32\Wbem\textvaluelist.xsl
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 28294000   DeleteFile</b>
+    fileName=TempWmicBatchFile.bat
+    Return=FAILURE
+</pre>
+<pre><b># 28830000   ExitProcess</b></pre>
+</body>

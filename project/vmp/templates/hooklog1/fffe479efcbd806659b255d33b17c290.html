@@ -1,0 +1,89 @@
+<html>
+<head>
+<style>
+   pre{
+      font-size: 15px;
+    }
+</style>
+</head>
+<body>
+<pre>fffe479efcbd806659b255d33b17c290_3068.trace.hooklog Bahavior Analysis</pre>
+<pre><b># 20902000   LoadLibrary</b>
+    lpFileName=C:\WINDOWS\system32\IMM32.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 20986000   LoadLibrary</b>
+    lpFileName=gdi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 20952000   LoadLibrary</b>
+    lpFileName=LPK.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 21039000   CreateFile</b>
+    hName=C:\WINDOWS\WindowsShell.Manifest
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 21064000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+    Return=2
+</pre>
+<pre><b># 21065000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+    Return=2
+</pre>
+<pre><b># 21066000   RegEnumValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+    type=REG_DWORD
+    data=2
+    Return=0
+</pre>
+<pre><b># 21103000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SYSTEM\Setup\SystemSetupInProgress
+    Return=0
+    type=REG_DWORD
+    data=0
+</pre>
+<pre><b># 21133000   LoadLibrary</b>
+    lpFileName=comctl32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 21148000   LoadLibrary</b>
+    lpFileName=comctl32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 21172000   RegQueryValue</b>
+    hKey=HKEY_CLASSES_ROOT\clsid\{6bc0989d-0ce6-11d1-baae-00c04fc2e20d}\\inprocserver32\ThreadingModel
+    Return=0
+    type=REG_SZ
+    data=Free
+</pre>
+<pre><b># 21174000   RegQueryValue</b>
+    hKey=HKEY_CLASSES_ROOT\clsid\{6bc0989d-0ce6-11d1-baae-00c04fc2e20d}\\inprocserver32\1
+    Return=2
+</pre>
+<pre><b># 21175000   RegQueryValue</b>
+    hKey=HKEY_CLASSES_ROOT\clsid\{6bc0989d-0ce6-11d1-baae-00c04fc2e20d}\\inprocserver32\2
+    Return=2
+</pre>
+<pre><b># 21176000   RegQueryValue</b>
+    hKey=HKEY_CLASSES_ROOT\clsid\{6bc0989d-0ce6-11d1-baae-00c04fc2e20d}\\inprocserver32\3
+    Return=2
+</pre>
+<pre><b># 26274000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+    Return=0
+</pre>
+<pre><b># 26274000   RegQueryValue</b>
+    hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+    Return=2
+</pre>
+<pre><b># 27046000   CreateFile</b>
+    hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+</body>

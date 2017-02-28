@@ -1,0 +1,66 @@
+<html>
+<head>
+<style>
+   pre{
+      font-size: 15px;
+    }
+</style>
+</head>
+<body>
+<pre>231954ef436f4ebdc136c888314760a4ff2e6768cb7c249489cfe6e2b480d39f_tmp Bahavior Analysis</pre>
+<pre><b># 26340000   LoadLibrary</b>
+    lpFileName=C:\WINDOWS\system32\IMM32.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 26425000   LoadLibrary</b>
+    lpFileName=gdi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 26391000   LoadLibrary</b>
+    lpFileName=LPK.DLL
+    Return=SUCCESS
+</pre>
+<pre><b># 26535000   LoadLibrary</b>
+    lpFileName=VERSION.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 26551000   CreateFile</b>
+    hName=C:\WINDOWS\System32\Wbem\wmic.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 26560000   CreateFile</b>
+    hName=C:\WINDOWS\System32\Wbem\wmic.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 26702000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+    Return=0
+</pre>
+<pre><b># 26705000   LoadLibrary</b>
+    lpFileName=advapi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 26436000   CreateProcessInternal</b>
+    lpCommandLine=WMIC csproduct Get UUID /FORMAT:textvaluelist.xsl
+    Return=SUCCESS
+    dwProcessId=3220
+    dwThreadId=3224
+</pre>
+<pre><b># 26435000   CreateProcessInternal</b>
+    lpCommandLine=WMIC csproduct Get UUID /FORMAT:textvaluelist.xsl
+    Return=SUCCESS
+    dwProcessId=3220
+    dwThreadId=3224
+</pre>
+<pre><b># 26435000   CreateProcess</b>
+    lpCommandLine=WMIC csproduct Get UUID /FORMAT:textvaluelist.xsl
+    Return=SUCCESS
+    dwProcessId=3220
+    dwThreadId=3224
+</pre>
+<pre><b># 32580000   ExitProcess</b></pre>
+</body>

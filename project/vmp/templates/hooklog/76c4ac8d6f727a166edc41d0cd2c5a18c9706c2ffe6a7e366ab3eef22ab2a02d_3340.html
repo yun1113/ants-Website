@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+   pre{
+      font-size: 15px;
+    }
+</style>
+</head>
+<body>
+<pre>76c4ac8d6f727a166edc41d0cd2c5a18c9706c2ffe6a7e366ab3eef22ab2a02d_3340.trace.hooklog Bahavior Analysis</pre>
+<pre><b># 24387000   LoadLibrary</b>
+    lpFileName=Secur32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 24492000   LoadLibrary</b>
+    lpFileName=VERSION.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 24507000   CreateFile</b>
+    hName=C:\WINDOWS\system32\svchost.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 24515000   CreateFile</b>
+    hName=C:\WINDOWS\system32\svchost.exe
+    desiredAccess=GENERIC_READ 
+    creationDisposition=OPEN_EXISTING
+    Return=SUCCESS
+</pre>
+<pre><b># 24656000   RegQueryValue</b>
+    hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+    Return=0
+</pre>
+<pre><b># 24660000   LoadLibrary</b>
+    lpFileName=advapi32.dll
+    Return=SUCCESS
+</pre>
+<pre><b># 24395000   CreateProcessInternal</b>
+    lpCommandLine=svchost.exe
+    Return=SUCCESS
+    dwProcessId=3348
+    dwThreadId=3352
+</pre>
+<pre><b># 24394000   CreateProcessInternal</b>
+    lpCommandLine=svchost.exe
+    Return=SUCCESS
+    dwProcessId=3348
+    dwThreadId=3352
+</pre>
+<pre><b># 24394000   CreateProcess</b>
+    lpCommandLine=svchost.exe
+    Return=SUCCESS
+    dwProcessId=3348
+    dwThreadId=3352
+</pre>
+</body>
