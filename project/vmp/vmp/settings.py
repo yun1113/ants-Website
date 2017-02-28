@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     'djcelery',
     'kombu.transport.django',
     'rest_framework',
+    'rest_framework.authtoken',
+    'rest_framework_expiring_authtoken',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -116,16 +118,20 @@ CACHES = {
 }
 
 REST_FRAMEWORK = {
-    # session login
+    # use token
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework_expiring_authtoken.authentication.ExpiringTokenAuthentication',
     ],
     # login to use
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
     ],
+    'EXCEPTION_HANDLER': 'malwaredb.utils.custom_exception_handler.custom_exception_handler',
+
 }
 
+import datetime
+EXPIRING_TOKEN_LIFESPAN = datetime.timedelta(hours=2)
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
