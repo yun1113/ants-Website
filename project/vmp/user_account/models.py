@@ -23,7 +23,7 @@ class AuditEntry(models.Model):
     action_date = models.DateTimeField()
 
     def __unicode__(self):
-        return '{0} - {1} - {2}'.format(self.action, self.username, self.ip)
+        return '{0} - {1} - {2}'.format(self.action, self.user.username, self.ip)
 
 
 @receiver(user_logged_in)
