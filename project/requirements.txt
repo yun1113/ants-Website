@@ -30,8 +30,3 @@ vine==1.1.3
 wcwidth==0.1.7
 websocket-client==0.37.0
 wsgiref==0.1.2
-djangorestframework==3.5.4
-
-# Expiring Tokens for Django Rest Framework
-# https://github.com/JamesRitchie/django-rest-framework-expiring-tokens
-djangorestframework-expiring-authtoken==0.1.4
