@@ -1,8 +1,7 @@
-from django.conf import settings
 import sys
+import os
 
-
-BASE_DIR = settings.BASE_DIR
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 input_dir = BASE_DIR + '/automation/output/'
 output_dir = BASE_DIR + '/templates/hooklog/'
 

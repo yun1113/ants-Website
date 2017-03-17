@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ej88b%$kw%zk5m#qt3#c*om#g%ti64+)f5gen!swto*#h8l!+v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '140.112.107.39', '0.0.0.0']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '140.112.107.41', '0.0.0.0']
 
 # Celery
 import djcelery
@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'vmp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'db_in_develop',  # deploy db: vmp
+        'NAME': 'ants_db',
         'USER': 'ants',
         'PASSWORD': 'project319',
         'HOST': 'localhost',
@@ -170,8 +170,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # Media
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
