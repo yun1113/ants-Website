@@ -26,7 +26,9 @@ build
 project/vmp/media/
 automation/output
 project/vmp/malwaredb/virus_total/
-project/vmp/malwaredb/templates/hooklog/
+project/vmp/templates/hooklog/
+project/vmp/automation/output
+project/vmp/VMimage
 
 # Logs:
 *.log
