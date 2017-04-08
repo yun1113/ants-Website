@@ -42,3 +42,7 @@ psycopg2==2.6.2
 # Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX.
 # https://github.com/benoitc/gunicorn
 gunicorn==19.6.0
+
+# django-import-export is a Django application and library for importing and exporting data with included admin integration.
+# https://github.com/django-import-export/django-import-export
+django-import-export==0.5.1
