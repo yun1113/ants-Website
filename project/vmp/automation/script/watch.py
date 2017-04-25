@@ -47,7 +47,7 @@ class TemuHandler(FileSystemEventHandler):
                     data = ''.join(added)
                     data_size = 512
                     while data:
-                        send_message = {'sample_hash': self.hash_value, "process_id": process_id, "data": data[0:data_size-1]}
+                        send_message = {'sample_hash': self.hash_value, "process_id": process_id, "data": data[0:data_size]}
                         try:
                             self.sock.sendall(json.dumps(send_message))
                         except socket.error:
