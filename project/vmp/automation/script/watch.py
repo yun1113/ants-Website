@@ -27,12 +27,19 @@ class TemuHandler(FileSystemEventHandler):
             self.tmp = tempfile.TemporaryFile()
 
     def on_modified(self, event):
-        if ".hooklog" in event.src_path:
+        if ".hooklog" in event.src_path and "output" not in event.src_path:
             print("modified: " + event.src_path)
             # compare
             with open(event.src_path, "r") as temu_hooklog:
+
                 diff = difflib.unified_diff(self.tmp.readlines(), temu_hooklog.readlines(), fromfile='file1',
                                             tofile='file2')
+                 # update tmp
+                temu_hooklog.seek(0)
+                self.tmp.seek(0)
+                self.tmp.write(temu_hooklog.read())
+                self.tmp.seek(0)
+
                 lines = list(diff)[2:]
                 added = [line[1:] for line in lines if line[0] == '+']
                 process_id = event.src_path.split("_")[1].split(".")[0]
@@ -41,15 +48,12 @@ class TemuHandler(FileSystemEventHandler):
                     data_size = 512
                     while data:
                         send_message = {'sample_hash': self.hash_value, "process_id": process_id, "data": data[0:data_size-1]}
-                        self.sock.sendall(json.dumps(send_message))
+                        try:
+                            self.sock.sendall(json.dumps(send_message))
+                        except socket.error:
+                            pass
                         time.sleep(0.5)
                         data = data[data_size:]
-
-                    # update tmp
-                    temu_hooklog.seek(0)
-                    self.tmp.seek(0)
-                    self.tmp.write(temu_hooklog.read())
-                    self.tmp.seek(0)
 
     def on_moved(self, event):
         if ".hooklog" in event.src_path:
