@@ -13,6 +13,7 @@ class TemuHandler(FileSystemEventHandler):
     def __init__(self, server_IP="127.0.0.1", server_port=10001, hash_value=""):
         try:
             self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_SNDBUF, 4096)
             self.hash_value = hash_value
             self.sock.connect((server_IP, server_port))
         except socket.error, msg:
@@ -36,8 +37,13 @@ class TemuHandler(FileSystemEventHandler):
                 added = [line[1:] for line in lines if line[0] == '+']
                 process_id = event.src_path.split("_")[1].split(".")[0]
                 if added:
-                    send_message = {'sample_hash': self.hash_value, "process_id": process_id, "data": ''.join(added)}
-                    self.sock.sendall(json.dumps(send_message))
+                    data = ''.join(added)
+                    data_size = 512
+                    while data:
+                        send_message = {'sample_hash': self.hash_value, "process_id": process_id, "data": data[0:data_size-1]}
+                        self.sock.sendall(json.dumps(send_message))
+                        time.sleep(0.5)
+                        data = data[data_size:]
 
                     # update tmp
                     temu_hooklog.seek(0)
