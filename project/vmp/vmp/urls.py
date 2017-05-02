@@ -5,6 +5,9 @@ from malwaredb.views import malware_search, get_index, malware_detail, \
     CustomObtainExpiringAuthToken, SubmitFileView, GetHooklogView
 from user_account.views import logout
 from django.conf.urls import handler400, handler403, handler404, handler500
+from django.conf.urls.static import static
+from django.conf import settings
+
 
 handler404 = 'malwaredb.views.bad_request'
 handler500 = 'malwaredb.views.server_error'
@@ -33,3 +36,6 @@ urlpatterns = [
     url(r'^analysis/(?P<hash_value>\w+)/(?P<page>\w+)$', load_hooklog_page),  # detail hooklog tab
     # url(r'^virustotal/(?P<hash>\w+)/$', loadvt),
 ]
+
+# media
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
