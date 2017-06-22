@@ -7,7 +7,7 @@ Django==1.10.3
 # http://www.celeryproject.org/install/
 celery==3.1.23
 
-# django-celery provides Celery integration for Djang
+# django-celery provides Celery integration for Django
 # https://pypi.python.org/pypi/django-celery
 django-celery==3.1.17
 
