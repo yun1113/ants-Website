@@ -42,3 +42,7 @@ psycopg2==2.6.2
 # Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX.
 # https://github.com/benoitc/gunicorn
 gunicorn==19.6.0
+
+# Django-environ allows you to utilize 12factor inspired environment variables to configure your Django application.
+# https://pypi.python.org/pypi/django-environ/0.4.0
+django-environ==0.4.0

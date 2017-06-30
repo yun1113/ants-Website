@@ -16,44 +16,55 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
+# Use 12factor inspired environment variables or from a file
+import environ
+env = environ.Env()
+
+env_file = os.path.join(os.path.dirname(__file__), 'local.env')
+if os.path.exists(env_file):
+    environ.Env.read_env(str(env_file))
+
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ej88b%$kw%zk5m#qt3#c*om#g%ti64+)f5gen!swto*#h8l!+v'
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '140.112.107.39', '0.0.0.0']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', env('LOCAL_IP'), ]
 
 # Celery
 import djcelery
 djcelery.setup_loader()
 
 BROKER_URL = 'amqp://guest:guest@localhost:5672/'
-# BROKER_URL = 'django://'
-# CELERY_RESULT_BACKEND = 'djcelery.backends.database:DatabaseBackend'
 
 # Application definition
 
-INSTALLED_APPS = [
+DJANGO_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+]
 
+THIRD_PARTY_APPS = [
     'django_extensions',
-    'malwaredb',
-    'user_account',
     'djcelery',
     'kombu.transport.django',
     'rest_framework',
     'rest_framework.authtoken',
     'rest_framework_expiring_authtoken',
 ]
+
+LOCAL_APPS = [
+    'malwaredb',
+    'user_account',
+]
+
+INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
@@ -71,7 +82,7 @@ ROOT_URLCONF = 'vmp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates'),],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'), ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -93,27 +104,11 @@ WSGI_APPLICATION = 'vmp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ants_db',
-        'USER': 'ants',
-        'PASSWORD': 'project319',
+        'NAME': env('DATABASE_NAME'),
+        'USER': env('DATABASE_USER'),
+        'PASSWORD': env('DATABASE_PASSWORD'),
         'HOST': 'localhost',
         'PORT': '',
-    }
-}
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
-# Cache CY_added
-CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-        'LOCATION': '127.0.0.1:11211',
     }
 }
 
@@ -170,8 +165,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 
 # Media
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
