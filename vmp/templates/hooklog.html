@@ -1,0 +1,20 @@
+<head>
+    <style>
+        pre {
+            font-size: 15px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <pre>{{ title }}</pre>
+
+    {% for invoke_api in invoke_api_list %}
+    <div style="margin:15px 0 15px 0">
+        <pre><b># {{ invoke_api.timestamp }}   {{ invoke_api.api_name }}</b></pre>
+        {% for arg in invoke_api.args %}
+            <pre>    {{ arg }}</pre>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</body>
