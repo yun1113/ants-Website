@@ -19,7 +19,7 @@ urlpatterns = [
 
     url(r'^malwaredb/$', malware_search),  # search
     url(r'^malwaredetail/$', malware_detail),  # detail
-    url(r'^malwaredownload/$', malware_download),  # download
+    url(r'^malwaredownload/(?P<hash_value>\w+)/(?P<page>\w+)$', malware_download),  # download
 
     url(r'^malwarefamily/$', malware_family),
     url(r'^malwarebehavior/$', malware_behavior),
