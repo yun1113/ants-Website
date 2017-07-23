@@ -34,7 +34,6 @@ urlpatterns = [
 
 
     url(r'^analysis/(?P<hash_value>\w+)/(?P<page>\w+)$', load_hooklog_page),  # detail hooklog tab
-    # url(r'^virustotal/(?P<hash>\w+)/$', loadvt),
 ]
 
 # media
