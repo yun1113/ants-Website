@@ -9,8 +9,9 @@
 
 <!-- navbar -->
 <nav class="navbar navbar-default navbar-static-top" data-spy="affix" data-offset-top="97">
+
   <ul class="nav navbar-nav">
-    <li><a href="/index/"><i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Home</a></li>
+    <li><a href="{% url 'index' %}"><i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Home</a></li>
     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-file-code-o fa-lg" aria-hidden="true"></i>&nbsp; Services <span class="caret"></span></a>
       <ul class="dropdown-menu">
         <li><a href="#PROFILING">High Level Malware Profiling</a></li>
@@ -21,13 +22,12 @@
     <li><a href="#"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i>&nbsp; Solutions</a></li>
     <li><a href="#"><i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>&nbsp; Question</a></li>
   </ul>
+
   <ul class="nav navbar-nav" style="float: right;">
     {% if request.user.is_authenticated %}
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i>&nbsp; {{request.user}} <span class="caret"></span></a>
-{#        <ul class="dropdown-menu">#}
-{#        </ul>#}
       </li>
-      <li><a href="/logout/"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Logout</a></li>
+      <li><a href="{% url 'log-out'%}"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Logout</a></li>
     {% else %}
       <li><a id="login" href="#"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i>&nbsp; Login</a></li>
       <li><a id="signup" href="#"><i class="fa fa-user-plus fa-lg" aria-hidden="true"></i>&nbsp; Signup</a></li>
@@ -240,6 +240,7 @@
         font-size: 22px;
     }
 </style>
+
   <div class="modal {% if not login_fail %}fade{% endif %} nav-form" id="login_dialog" style="display: none;">
     <div class="modal-dialog">
       <!-- Modal content-->
@@ -249,7 +250,7 @@
            <h1 class="modal-title" style="color: darkblue;font-size: 45px;text-shadow: 1px 1px 1px white"><b>Login</b></h1>
         </div>
         <div class="modal-body">
-          <form id="a" role="form" action="/index/" method="post" id="login-form" autocomplete="off">
+          <form id="login-form" action="{% url 'index' %}" method="post" autocomplete="off">
             {% csrf_token %}
             {% for field in login_form %}
               {% if field.id_for_label|lower == 'id_username' %}
@@ -292,7 +293,7 @@
           <p id="a">You may create an account on our website. We will measure the amount of malware samples you submit to reward your contributions by rapid responses of analysis results.</p>
         </div>
         <div class="modal-body">
-          <form id="a" role="form" action="/index/" method="post" id="signup-form" autocomplete="off">
+          <form id="a" role="form" action="{% url 'index' %}" method="post" id="signup-form" autocomplete="off">
             {% csrf_token %}
             {% for field in signup_form %}
               {% if field.id_for_label|lower == 'id_username' %}
@@ -333,7 +334,7 @@
            <h1 class="modal-title" style="color: darkblue;font-size: 45px;text-shadow: 1px 1px 1px white"><b>Forget Password?</b></h1>
         </div>
         <div class="modal-body">
-          <form id="a" role="form" action="/index/" method="post" id="forgetpwd-form" autocomplete="off">
+          <form id="a" role="form" action="{% url 'index' %}" method="post" id="forgetpwd-form" autocomplete="off">
             {% csrf_token %}
 {#            {% for field in forgetpwd_form %}#}
 {#              {% if field.id_for_label|lower == 'id_username' %}#}
@@ -424,13 +425,16 @@
     $('#login').on('click', function(){
         $('#login_dialog').modal('show');
     });
+
     $('#signup').on('click', function(){
         $('#signup_dialog').modal('show');
     });
+
     $('#newaccount').on('click', function(){
         $('#signup_dialog').modal('show');
         $('#login_dialog').modal('hide');
     });
+
     $('#pwd').on('click', function(){
         $('#forgetpwd').modal('show');
         $('#login_dialog').modal('hide');

@@ -15,7 +15,7 @@ handler500 = 'malwaredb.views.server_error'
 urlpatterns = [
 
     url(r'^admin/', admin.site.urls),
-    url(r'^index/$', get_index),  # login, signup, upload
+    url(r'^index/$', get_index, name='index'),  # login, signup, upload
 
     url(r'^malwaredb/$', malware_search),  # search
     url(r'^malwaredetail/$', malware_detail),  # detail
@@ -25,7 +25,7 @@ urlpatterns = [
     url(r'^malwarebehavior/$', malware_behavior),
 
     url(r'^contact/$', contact),
-    url(r'^logout/$', logout),
+    url(r'^logout/$', logout, name='log-out'),
 
     # api
     url(r'^request_token/', CustomObtainExpiringAuthToken.as_view()),
