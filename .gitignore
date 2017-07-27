@@ -25,6 +25,7 @@ build
 vmp/media/
 automation/output
 vmp/malwaredb/virus_total/
+vmp/malwaredb/docker_logs/
 vmp/templates/hooklog/
 vmp/automation/output
 vmp/VMimage
