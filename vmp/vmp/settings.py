@@ -30,8 +30,8 @@ SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
-
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', env('LOCAL_IP'), ]
+LOCAL_IP = env('LOCAL_IP')
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', LOCAL_IP, ]
 
 # Celery
 import djcelery
