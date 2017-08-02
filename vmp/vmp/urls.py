@@ -2,7 +2,7 @@ from django.conf.urls import url
 from django.contrib import admin
 from malwaredb.views import malware_search, index, malware_detail, \
     malware_download, load_hooklog_page, contact, malware_family, malware_behavior, \
-    CustomObtainExpiringAuthToken, SubmitFileView, GetHooklogView
+    CustomObtainExpiringAuthToken, SubmitFileView, GetHooklogView, api_upload_file
 from user_account.views import logout
 from django.conf.urls import handler400, handler403, handler404, handler500
 from django.conf.urls.static import static
@@ -30,6 +30,7 @@ urlpatterns = [
     # api
     url(r'^request_token/', CustomObtainExpiringAuthToken.as_view()),
     url(r'^submit_file/', SubmitFileView.as_view()),
+    url(r'^submit_file2/', api_upload_file),
     url(r'^get_hooklog/', GetHooklogView.as_view()),
 
 
