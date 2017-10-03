@@ -33,7 +33,6 @@ urlpatterns = [
     url(r'^submit_file2/', api_upload_file),
     url(r'^get_hooklog/', GetHooklogView.as_view()),
 
-
     url(r'^analysis/(?P<hash_value>\w+)/(?P<page>\w+)$', load_hooklog_page),  # detail hooklog tab
 ]
 
