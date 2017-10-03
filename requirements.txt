@@ -7,7 +7,7 @@ Django==1.10.3
 # http://www.celeryproject.org/install/
 celery==3.1.23
 
-# django-celery provides Celery integration for Djang
+# django-celery provides Celery integration for Django
 # https://pypi.python.org/pypi/django-celery
 django-celery==3.1.17
 
@@ -46,3 +46,8 @@ gunicorn==19.6.0
 # Django-environ allows you to utilize 12factor inspired environment variables to configure your Django application.
 # https://pypi.python.org/pypi/django-environ/0.4.0
 django-environ==0.4.0
+
+# django-import-export is a Django application and library for importing and exporting data with included admin integration.
+# https://github.com/django-import-export/django-import-export
+django-import-export==0.5.1
+
