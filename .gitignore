@@ -22,13 +22,11 @@ build
 
 # Project file
 *.trace.hooklog
-/VMimage
-project/vmp/media/
+vmp/media/
 automation/output
-project/vmp/malwaredb/virus_total/
-project/vmp/templates/hooklog/
-project/vmp/automation/output
-project/vmp/VMimage
+vmp/malwaredb/docker_logs/
+vmp/automation/output
+vmp/VMimage
 
 # Logs:
 *.log
