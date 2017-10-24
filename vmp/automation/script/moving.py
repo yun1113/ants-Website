@@ -2,8 +2,10 @@ from subprocess import call
 import sys
 import os
 
+base_dir = '/home/root/'
+target_dir = '/home/root/automation/output/'
 
-for filename in os.listdir("/home/root"):
-    if "malware.exe_" in filename and not filename.endswith(".trace"):
+for filename in os.listdir(base_dir):
+    if ".trace." in filename:
         print("mv " + filename)
-        call(["mv", os.path.join("/home/root/" + filename), os.path.join("/home/root/automation/output/" + sys.argv[1] + "_" + filename.split("_")[1])])
+        call(["mv", os.path.join(base_dir + filename), os.path.join(target_dir + sys.argv[1] + "_" + filename.split("_")[1])])
