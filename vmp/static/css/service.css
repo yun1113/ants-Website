@@ -320,3 +320,27 @@ iframe {
 #family-table td:first-child {
     border-right: 1px solid #ddd;
 }
+
+.dropdown-toggle-family {
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-toggle-family .col-sm-11{
+    padding-left: 0px;
+}
+
+.dropdown-toggle-family .col-sm-1{
+    text-align: right;
+    padding-right: 0px;
+}
+
+.family-dropdown{
+    width: 100%;
+}
+
+.scrollable-menu{
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
