@@ -9,30 +9,39 @@
 
 <!-- navbar -->
 <nav class="navbar navbar-default navbar-static-top" data-spy="affix" data-offset-top="97">
-
-  <ul class="nav navbar-nav">
-    <li><a href="{% url 'index' %}"><i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Home</a></li>
-    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-file-code-o fa-lg" aria-hidden="true"></i>&nbsp; Services <span class="caret"></span></a>
-      <ul class="dropdown-menu">
-        <li><a href="#PROFILING">High Level Malware Profiling</a></li>
-        <li><a href="#ANALYSIS">Common Behavior Motif Analysis Of A Malware Family</a></li>
-      </ul>
-    </li>
-    <li><a href="#"><i class="fa fa-users fa-lg" aria-hidden="true"></i>&nbsp; About Us</a></li>
-    <li><a href="#"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i>&nbsp; Solutions</a></li>
-    <li><a href="#"><i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>&nbsp; Question</a></li>
-  </ul>
-
-  <ul class="nav navbar-nav" style="float: right;">
-    {% if request.user.is_authenticated %}
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i>&nbsp; {{request.user}} <span class="caret"></span></a>
+  <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-data" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+  </div>
+  <div class="collapse navbar-collapse" id="navbar-collapse-data">
+    <ul class="nav navbar-nav">
+      <li><a href="{% url 'index' %}"><i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-file-code-o fa-lg" aria-hidden="true"></i>&nbsp; Services <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#PROFILING">High Level Malware Profiling</a></li>
+          <li><a href="#ANALYSIS">Common Behavior Motif Analysis Of A Malware Family</a></li>
+        </ul>
       </li>
-      <li><a href="{% url 'log-out'%}"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Logout</a></li>
-    {% else %}
-      <li><a id="login" href="#"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i>&nbsp; Login</a></li>
-      <li><a id="signup" href="#"><i class="fa fa-user-plus fa-lg" aria-hidden="true"></i>&nbsp; Signup</a></li>
-    {% endif %}
-  </ul>
+      <li><a href="#"><i class="fa fa-users fa-lg" aria-hidden="true"></i>&nbsp; About Us</a></li>
+      <li><a href="#"><i class="fa fa-lightbulb-o fa-lg" aria-hidden="true"></i>&nbsp; Solutions</a></li>
+      <li><a href="#"><i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>&nbsp; Question</a></li>
+    </ul>
+
+    <ul class="nav navbar-nav" style="float: right;">
+      {% if request.user.is_authenticated %}
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i>&nbsp; {{request.user}} <span class="caret"></span></a>
+        </li>
+        <li><a href="{% url 'log-out'%}"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Logout</a></li>
+      {% else %}
+        <li><a id="login" href="#"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i>&nbsp; Login</a></li>
+        <li><a id="signup" href="#"><i class="fa fa-user-plus fa-lg" aria-hidden="true"></i>&nbsp; Signup</a></li>
+      {% endif %}
+    </ul>
+  </div>
 </nav>
 <!-- /navbar -->
 
