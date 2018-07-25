@@ -1,7 +1,7 @@
 from django.conf.urls import url
 from django.contrib import admin
 from malwaredb.views import malware_search, index, malware_detail, \
-    malware_download, load_hooklog_page, contact, malware_family, malware_behavior, \
+    malware_download, load_hooklog_page, contact, malware_behavior, \
     CustomObtainExpiringAuthToken, SubmitFileView, GetHooklogView, api_upload_file
 from user_account.views import logout
 from django.conf.urls import handler400, handler403, handler404, handler500
@@ -21,7 +21,6 @@ urlpatterns = [
     url(r'^malwaredetail/$', malware_detail),  # detail
     url(r'^malwaredownload/(?P<hash_value>\w+)/(?P<page>\w+)$', malware_download),  # download
 
-    url(r'^malwarefamily/$', malware_family),
     url(r'^malwarebehavior/$', malware_behavior),
 
     url(r'^contact/$', contact),
