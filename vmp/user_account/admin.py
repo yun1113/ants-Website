@@ -14,11 +14,11 @@ class UserResource(resources.ModelResource):
 
     class Meta:
         model = User
-        fields = ('id', 'username', 'date_joined', 'last_login', )
-        export_order = ('id', 'username', 'date_joined', 'last_login')
+        fields = ('username', 'email', 'date_joined', 'last_login', )
+        export_order = ('username', 'email', 'date_joined', 'last_login')
 
     def dehydrate_related_uploads(self, obj):
-        return len(obj.useraccount.upload_set.all())
+        return obj.useraccount.upload_set.count()
 
 
 class UserAccountInline(admin.StackedInline):
@@ -30,7 +30,10 @@ class UserAccountInline(admin.StackedInline):
 class UserAdmin(ExportMixin, BaseUserAdmin):
     resource_class = UserResource
     inlines = (UserAccountInline, )
+    list_display = ('username', 'email', 'date_joined', 'last_login', 'upload_count')
 
+    def upload_count(self, model_instance):
+        return model_instance.useraccount.upload_set.count()
 
 # @admin.register(AuditEntry)
 class AuditEntryAdmin(admin.ModelAdmin):
