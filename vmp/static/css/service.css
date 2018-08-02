@@ -152,7 +152,7 @@ iframe {
     height:400px;
     overflow-y: scroll;
     width: 100%;
-    border:none
+    border:none;   
 }
 
 #save_img, #print_img{
@@ -163,6 +163,7 @@ iframe {
     text-align: left;
     padding: 10px 10px;
     background-color:  #F2EEDF;
+    overflow: auto;
 }
 
 .jumbotron p {
