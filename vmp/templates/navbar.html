@@ -257,6 +257,7 @@
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
            <h1 class="modal-title" style="color: darkblue;font-size: 45px;text-shadow: 1px 1px 1px white"><b>Login</b></h1>
+           <p style="text-align: center; text-indent: -20px; padding: 10px 0 0 0;" id="login-notify"></p>
         </div>
         <div class="modal-body">
           <form id="login-form" action="{% url 'index' %}" method="post" autocomplete="off">
@@ -407,6 +408,12 @@
 {% endif %}
 
 <script>
+    {% if need_login %}
+        window.onload=function(){
+            $('#login_dialog').modal('show');
+            document.getElementById('login-notify').innerHTML="Please log in first!!";
+        }
+    {% endif %}
     {% if login_fail %}
         window.onload=function(){
             $('#login_dialog').modal('show');
